@@ -209,9 +209,9 @@
       position: absolute; inset: 0;
       background: linear-gradient(
         180deg,
-        rgba(26,10,25,0.6) 0%,
-        rgba(26,10,25,0.3) 40%,
-        rgba(26,10,25,0.5) 70%,
+        rgba(26,10,25,0.75) 0%,
+        rgba(26,10,25,0.55) 40%,
+        rgba(26,10,25,0.65) 70%,
         rgba(26,10,25,1) 100%
       );
       z-index: 1;
@@ -224,9 +224,6 @@
     .hero-logo {
       height: clamp(50px, 10vw, 80px);
       margin: 0 auto 40px;
-      opacity: 0;
-      filter: blur(10px);
-      transform: translateY(20px);
     }
     .hero-eyebrow {
       font-family: 'Jost', sans-serif;
@@ -236,8 +233,6 @@
       text-transform: uppercase;
       color: var(--gold);
       margin-bottom: 16px;
-      opacity: 0;
-      transform: translateY(20px);
     }
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
@@ -250,9 +245,6 @@
     }
     .hero h1 .line {
       display: block;
-      opacity: 0;
-      transform: translateY(40px);
-      filter: blur(4px);
     }
     .hero h1 .line-muted {
       color: var(--accent-light);
@@ -268,16 +260,12 @@
       font-style: italic;
       max-width: 420px;
       margin: 0 auto 36px;
-      opacity: 0;
-      transform: translateY(20px);
     }
     .hero-buttons {
       display: flex;
       gap: 14px;
       justify-content: center;
       flex-wrap: wrap;
-      opacity: 0;
-      transform: translateY(20px);
     }
     .btn {
       font-family: 'Jost', sans-serif;
@@ -316,7 +304,6 @@
       bottom: 32px;
       left: 50%; transform: translateX(-50%);
       z-index: 2;
-      opacity: 0;
     }
     .hero-scroll span {
       display: block;
@@ -363,9 +350,8 @@
       margin-bottom: 56px;
     }
 
-    /* Reveal animation class */
-    .reveal { opacity: 0; transform: translateY(30px); }
-    .reveal.visible { opacity: 1; transform: translateY(0); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
+    /* Reveal animation — visible by default, GSAP hides then reveals */
+    .reveal { opacity: 1; transform: none; }
 
     /* ─── SERVICES GRID ─── */
     .services-grid {
@@ -877,23 +863,11 @@
     <a href="tel:+33650612204" class="fcta-call">Appeler</a>
   </div>
 
-  <!-- LENIS SMOOTH SCROLL -->
-  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
-
-  <!-- GSAP + SCROLLTRIGGER -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <!-- GSAP + SCROLLTRIGGER (loaded before inline script, no defer) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
   <script>
-    // ─── LENIS ───
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      touchMultiplier: 1.5,
-    });
-    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
-    requestAnimationFrame(raf);
-
     // ─── HEADER SCROLL ───
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
@@ -916,53 +890,45 @@
       });
     });
 
-    // ─── GSAP ANIMATIONS ───
-    window.addEventListener('DOMContentLoaded', () => {
-      // Hero entrance
-      const tl = gsap.timeline({ delay: 0.3 });
+    // ─── GSAP ANIMATIONS (progressive enhancement) ───
+    if (typeof gsap !== 'undefined' && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Hero entrance — GSAP sets initial hidden state, then animates
+      gsap.set('.hero-logo', { opacity: 0, y: 20, filter: 'blur(8px)' });
+      gsap.set('.hero-eyebrow', { opacity: 0, y: 15 });
+      gsap.set('.hero h1 .line', { opacity: 0, y: 30, filter: 'blur(3px)' });
+      gsap.set('.hero-sub', { opacity: 0, y: 15 });
+      gsap.set('.hero-buttons', { opacity: 0, y: 15 });
+      gsap.set('.hero-scroll', { opacity: 0 });
+
+      const tl = gsap.timeline({ delay: 0.4 });
       tl.to('.hero-logo', { opacity: 1, y: 0, filter: 'blur(0px)', duration: 1, ease: 'power3.out' })
-        .to('.hero-eyebrow', { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, '-=0.6')
-        .to('.hero h1 .line', { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.8, stagger: 0.12, ease: 'power3.out' }, '-=0.5')
-        .to('.hero-sub', { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4')
-        .to('.hero-buttons', { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4')
-        .to('.hero-scroll', { opacity: 1, duration: 1, ease: 'power2.out' }, '-=0.2');
+        .to('.hero-eyebrow', { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, '-=0.5')
+        .to('.hero h1 .line', { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.7, stagger: 0.12, ease: 'power3.out' }, '-=0.4')
+        .to('.hero-sub', { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, '-=0.3')
+        .to('.hero-buttons', { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, '-=0.3')
+        .to('.hero-scroll', { opacity: 0.6, duration: 1, ease: 'power2.out' }, '-=0.2');
 
       // Hero parallax
       gsap.to('.hero-video', {
-        yPercent: 15,
+        yPercent: 12,
         ease: 'none',
-        scrollTrigger: {
-          trigger: '.hero',
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-        }
+        scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
       });
       gsap.to('.hero-content', {
-        yPercent: -20,
+        yPercent: -15,
         opacity: 0,
         ease: 'none',
-        scrollTrigger: {
-          trigger: '.hero',
-          start: '60% top',
-          end: 'bottom top',
-          scrub: true,
-        }
+        scrollTrigger: { trigger: '.hero', start: '60% top', end: 'bottom top', scrub: true }
       });
 
-      // Reveal sections
-      document.querySelectorAll('.reveal').forEach((el, i) => {
+      // Reveal sections — GSAP sets hidden, then reveals on scroll
+      document.querySelectorAll('.reveal').forEach(el => {
         gsap.fromTo(el,
-          { opacity: 0, y: 30 },
-          {
-            opacity: 1, y: 0,
-            duration: 0.8,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: el,
-              start: 'top 85%',
-              once: true,
-            }
+          { opacity: 0, y: 24 },
+          { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+            scrollTrigger: { trigger: el, start: 'top 88%', once: true }
           }
         );
       });
@@ -970,21 +936,13 @@
       // Stagger service cards
       gsap.utils.toArray('.service-card').forEach((card, i) => {
         gsap.fromTo(card,
-          { opacity: 0, y: 30 },
-          {
-            opacity: 1, y: 0,
-            duration: 0.7,
-            delay: i * 0.1,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: card,
-              start: 'top 85%',
-              once: true,
-            }
+          { opacity: 0, y: 24 },
+          { opacity: 1, y: 0, duration: 0.7, delay: i * 0.1, ease: 'power3.out',
+            scrollTrigger: { trigger: card, start: 'top 88%', once: true }
           }
         );
       });
-    });
+    }
   </script>
 
 </body>
