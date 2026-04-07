@@ -534,16 +534,29 @@
     .reviews-track-wrapper {
       position: relative;
       width: 100%;
-      mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
-      -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x proximity;
+      scrollbar-width: none;
+      mask-image: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+      cursor: grab;
     }
+    .reviews-track-wrapper:active { cursor: grabbing; }
+    .reviews-track-wrapper::-webkit-scrollbar { display: none; }
     .reviews-track {
       display: flex;
       gap: 20px;
-      animation: marquee 40s linear infinite;
       width: max-content;
+      animation: marquee 45s linear infinite;
+      padding: 8px 0;
     }
-    .reviews-track:hover { animation-play-state: paused; }
+    .reviews-track-wrapper:hover .reviews-track,
+    .reviews-track-wrapper.dragging .reviews-track,
+    .reviews-track-wrapper.scrolling .reviews-track {
+      animation-play-state: paused;
+    }
     @keyframes marquee {
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
@@ -552,6 +565,7 @@
       flex-shrink: 0;
       width: 320px;
       padding: 28px;
+      scroll-snap-align: start;
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -1154,8 +1168,44 @@
         cardObserver.observe(grid);
       }
     } else {
-      // Reduced motion: show everything
       document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    }
+
+    // ─── REVIEWS DRAG SCROLL (desktop + mobile) ───
+    const wrapper = document.querySelector('.reviews-track-wrapper');
+    if (wrapper) {
+      let isDown = false, startX, scrollLeft, resumeTimer;
+
+      const pauseAuto = () => {
+        wrapper.classList.add('dragging');
+        clearTimeout(resumeTimer);
+        resumeTimer = setTimeout(() => wrapper.classList.remove('dragging'), 3000);
+      };
+
+      // Mouse drag
+      wrapper.addEventListener('mousedown', e => {
+        isDown = true;
+        wrapper.classList.add('dragging');
+        startX = e.pageX - wrapper.offsetLeft;
+        scrollLeft = wrapper.scrollLeft;
+        e.preventDefault();
+      });
+      wrapper.addEventListener('mouseleave', () => { isDown = false; });
+      wrapper.addEventListener('mouseup', () => { isDown = false; pauseAuto(); });
+      wrapper.addEventListener('mousemove', e => {
+        if (!isDown) return;
+        const x = e.pageX - wrapper.offsetLeft;
+        wrapper.scrollLeft = scrollLeft - (x - startX);
+      });
+
+      // Touch: pause auto-scroll while swiping
+      wrapper.addEventListener('touchstart', () => {
+        wrapper.classList.add('scrolling');
+      }, { passive: true });
+      wrapper.addEventListener('touchend', () => {
+        clearTimeout(resumeTimer);
+        resumeTimer = setTimeout(() => wrapper.classList.remove('scrolling'), 3000);
+      });
     }
   </script>
 
