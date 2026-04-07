@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth:*)",
+      "Bash(npm --version)",
+      "Bash(git --version)",
+      "Bash(brew --version)",
+      "Bash(gh --version)",
+      "Bash(vercel --version)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\")",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(brew list:*)"
+    ]
+  }
+}

@@ -1,0 +1,187 @@
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="https://espace-ongles.fr" resolutions="1x" timestamp="1725457822941">
+  <folder name="css">
+    <file name="site_global.css" crc="3829170685"/>
+    <file name="master_a-gabarit.css" crc="4227512004" ref="index:offrir-un-bon-cadeau"/>
+    <file name="index.css" crc="4001792438" ref="index"/>
+    <file name="offrir-un-bon-cadeau.css" crc="3837219741" ref="offrir-un-bon-cadeau"/>
+  </folder>
+  <folder name="fonts">
+    <file name="rift_soft_bold-webfont.woff" crc="4294686594"/>
+    <file name="rift_soft_bold-webfont.eot" crc="150485236"/>
+    <file name="rift_soft_bold-webfont.svg" crc="4293163659"/>
+    <file name="foco-webfont.woff" crc="431871424"/>
+    <file name="foco-webfont.eot" crc="33991408"/>
+    <file name="foco-webfont.svg" crc="520063322"/>
+    <file name="rift_soft_bold-webfont.woff" crc="4294686594"/>
+    <file name="rift_soft_bold-webfont.eot" crc="150485236"/>
+    <file name="rift_soft_bold-webfont.svg" crc="4293163659"/>
+    <file name="foco-webfont.woff" crc="431871424"/>
+    <file name="foco-webfont.eot" crc="33991408"/>
+    <file name="foco-webfont.svg" crc="520063322"/>
+    <file name="foco_light_italic-webfont.woff" crc="434394155"/>
+    <file name="foco_light_italic-webfont.eot" crc="3972459924"/>
+    <file name="foco_light_italic-webfont.svg" crc="3921636967"/>
+    <file name="rift_soft_bold-webfont.woff" crc="4294686594"/>
+    <file name="rift_soft_bold-webfont.eot" crc="150485236"/>
+    <file name="rift_soft_bold-webfont.svg" crc="4293163659"/>
+    <file name="foco-webfont.woff" crc="431871424"/>
+    <file name="foco-webfont.eot" crc="33991408"/>
+    <file name="foco-webfont.svg" crc="520063322"/>
+    <file name="rift_soft_medium-webfont.woff" crc="426914837"/>
+    <file name="rift_soft_medium-webfont.eot" crc="511424416"/>
+    <file name="rift_soft_medium-webfont.svg" crc="42087482"/>
+    <file name="rift_soft_bold-webfont.woff" crc="4294686594"/>
+    <file name="rift_soft_bold-webfont.eot" crc="150485236"/>
+    <file name="rift_soft_bold-webfont.svg" crc="4293163659"/>
+    <file name="foco-webfont.woff" crc="431871424"/>
+    <file name="foco-webfont.eot" crc="33991408"/>
+    <file name="foco-webfont.svg" crc="520063322"/>
+  </folder>
+  <folder name="assets">
+    <file name="tarifs-a4-espaceongles.pdf" crc="4120994426" seo="true" mt="1625749459000"/>
+    <file name="image.png" crc="4051934227" seo="true" mt="1627798628000"/>
+    <file name="videofull.mp4" crc="4215440545" seo="true" mt="1637839414000"/>
+    <file name="videofull.webm" crc="3981548154" seo="true" mt="1637839504000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="phone>index:phone>offrir-un-bon-cadeau:index:offrir-un-bon-cadeau"/>
+    <file name="museutils.js" crc="3939489907" ref="phone>index:phone>offrir-un-bon-cadeau:index:offrir-un-bon-cadeau"/>
+    <file name="whatinput.js" crc="86476730" ref="phone>index:phone>offrir-un-bon-cadeau:index:offrir-un-bon-cadeau"/>
+    <file name="museconfig.js" crc="128606099" ref="phone>index:phone>offrir-un-bon-cadeau:index:offrir-un-bon-cadeau"/>
+    <file name="jquery.watch.js" crc="522499760" ref="phone>index:phone>offrir-un-bon-cadeau:index:offrir-un-bon-cadeau"/>
+    <file name="webpro.js" crc="3856315280" ref="phone>index:index:offrir-un-bon-cadeau"/>
+    <file name="musewpslideshow.js" crc="244150766" ref="phone>index:index"/>
+    <file name="jquery.museoverlay.js" crc="3877667098" ref="phone>index:index"/>
+    <file name="touchswipe.js" crc="3888935200" ref="phone>index:index"/>
+    <file name="require.js" crc="4177726516" ref="phone>index:phone>offrir-un-bon-cadeau:index:offrir-un-bon-cadeau"/>
+    <file name="form_check.php" crc="4108222811" ref="index:offrir-un-bon-cadeau"/>
+    <file name="form_throttle.php" crc="503802655" ref="index:offrir-un-bon-cadeau"/>
+    <file name="form_process.php" crc="260214869" ref="index:offrir-un-bon-cadeau"/>
+    <file name="form-u606.php" crc="387404365" ref="index:offrir-un-bon-cadeau"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="4077444674" ref="phone>index:phone>offrir-un-bon-cadeau"/>
+    <file name="logoblanc-espaceongles.svg" crc="238869688" seo="true" ref="phone>index:phone>offrir-un-bon-cadeau:index:offrir-un-bon-cadeau">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="offrir-un-bon-cadeau" alt=""/>
+    </file>
+    <file name="logoblanc-espaceongles_poster_.png" crc="3777498451" ref="phone>index:phone>offrir-un-bon-cadeau:offrir-un-bon-cadeau"/>
+    <file name="phone-espaceongles.svg" crc="269667691" seo="true" ref="phone>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="phone-espaceongles_poster_.png" crc="4132699652" ref="phone>index"/>
+    <file name="0cf9fd5b-2cf8-4305-a837-66a192bdb84a.jpg" crc="267598672" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="phone>index:index"/>
+    <file name="1b89ef3d-fe95-4643-b6a0-195ddbf341b1.jpg" crc="25369138" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1d8806bd-941c-4246-90b2-91006ba5bf0f.jpg" crc="3857541808" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="5d1484ad-facc-4a52-bdb9-3360ab9871c6.jpg" crc="316882428" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="5fe55e86-a905-4787-b7ed-4b19b94f4134.jpg" crc="4210025126" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="34d8610f-7c27-40b7-9760-064de5f4cbb3.jpg" crc="219606930" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="071a6c33-a92b-47f1-8227-fcba34048abe.jpg" crc="3830302436" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="75a65c5e-2947-4e6b-bf0a-d56297dcdf81.jpg" crc="528562388" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="540c19cc-4d39-4ab7-815f-85828a121635.jpg" crc="3847776285" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="235463d6-6bf7-488b-87cc-dc74a6d1ae7c.jpg" crc="369796905" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="a6cf67a6-f235-4953-b05a-d3c226a7494d.jpg" crc="3885111535" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="ae508f75-974e-4b2e-951c-1984b8bdd043.jpg" crc="3781170115" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="phone>index:index"/>
+    <file name="image0.jpg" crc="3828387986" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image1.jpg" crc="132453012" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image2.jpg" crc="291117730" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="facebookmauve-espaceongles.svg" crc="4012585321" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="facebookmauve-espaceongles_poster_.png" crc="4033712918" ref="phone>index"/>
+    <file name="instagrammauve-espacengles.svg" crc="4106166010" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="instagrammauve-espacengles_poster_.png" crc="234853464" ref="phone>index"/>
+    <file name="logomauve-espaceongles.svg" crc="180516669" seo="true" ref="phone>index:phone>offrir-un-bon-cadeau:index:offrir-un-bon-cadeau">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="offrir-un-bon-cadeau" alt=""/>
+    </file>
+    <file name="logomauve-espaceongles_poster_.png" crc="4064899230" ref="phone>index:phone>offrir-un-bon-cadeau:offrir-un-bon-cadeau"/>
+    <file name="logoblanc-paper34.svg" crc="4033244007" seo="true" ref="phone>index:phone>offrir-un-bon-cadeau:index:offrir-un-bon-cadeau">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="offrir-un-bon-cadeau" alt=""/>
+    </file>
+    <file name="logoblanc-paper34_poster_.png" crc="275011884" ref="phone>index:phone>offrir-un-bon-cadeau:offrir-un-bon-cadeau"/>
+    <file name="espace-ongles--salon-de-manucure-à-pézenas-34120-favicon.ico" crc="4020686149" ref="index"/>
+    <file name="facebook-espaceongles.svg" crc="3959250918" seo="true" ref="index:offrir-un-bon-cadeau">
+      <caption webpage="index" alt=""/>
+      <caption webpage="offrir-un-bon-cadeau" alt=""/>
+    </file>
+    <file name="facebook-espaceongles_poster_.png" crc="188248308" ref="index:offrir-un-bon-cadeau"/>
+    <file name="instagram-espaceongles.svg" crc="489574771" seo="true" ref="index:offrir-un-bon-cadeau">
+      <caption webpage="index" alt=""/>
+      <caption webpage="offrir-un-bon-cadeau" alt=""/>
+    </file>
+    <file name="instagram-espaceongles_poster_.png" crc="447691183" ref="index:offrir-un-bon-cadeau"/>
+    <file name="calendrier-espaceongles.svg" crc="80658960" seo="true" ref="index:offrir-un-bon-cadeau">
+      <caption webpage="index" alt=""/>
+      <caption webpage="offrir-un-bon-cadeau" alt=""/>
+    </file>
+    <file name="calendrier-espaceongles_poster_.png" crc="106134915" ref="index:offrir-un-bon-cadeau"/>
+    <file name="image0358x358.jpg" crc="4040138159" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image1358x358.jpg" crc="168378163" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image2-crop-u3538.jpg" crc="4210569254" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="facebook-espaceongles2.svg" crc="3959250918" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="facebook-espaceongles_poster_2.png" crc="341024355" ref="index"/>
+    <file name="instagram-espaceongles2.svg" crc="489574771" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="instagram-espaceongles_poster_2.png" crc="295746767" ref="index"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="master_a-gabarit.css" crc="75310383" ref="phone>offrir-un-bon-cadeau:phone>index"/>
+      <file name="offrir-un-bon-cadeau.css" crc="213249585" ref="phone>offrir-un-bon-cadeau"/>
+      <file name="index.css" crc="474983137" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="17335226" seo="true" mt="1704740821272" redirect="true"/>
+    <file name="offrir-un-bon-cadeau.html" crc="204415445" seo="true" mt="1725456835245" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="121658433" seo="true" mt="1704740850335" redirect="true"/>
+  <file name="offrir-un-bon-cadeau.html" crc="425844528" seo="true" mt="1725457806804" redirect="true"/>
+</manifest>
