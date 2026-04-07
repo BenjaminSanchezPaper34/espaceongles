@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://espace-ongles.fr/index.html</loc>
     <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="https://espace-ongles.fr/phone/index.html"/>
     <image:image>
       <image:loc>https://espace-ongles.fr/images/image0358x358.jpg</image:loc>
       <image:title>Pose d'ongles en gel Espace Ongles Pézenas</image:title>
@@ -16,11 +15,7 @@
     </image:image>
     <image:image>
       <image:loc>https://espace-ongles.fr/images/image2-crop-u3538.jpg</image:loc>
-      <image:title>Résultat manucure professionnelle Espace Ongles</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/logomauve-espaceongles_poster_.png</image:loc>
-      <image:title>Logo Espace Ongles salon manucure Pézenas</image:title>
+      <image:title>Extension de cils Espace Ongles Pézenas</image:title>
     </image:image>
   </url>
   <url>
@@ -40,6 +35,5 @@
     <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="https://espace-ongles.fr/phone/offrir-un-bon-cadeau.html"/>
   </url>
 </urlset>
