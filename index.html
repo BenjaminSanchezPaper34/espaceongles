@@ -482,6 +482,128 @@
       background: var(--surface);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .reviews-badges {
+      display: flex;
+      justify-content: center;
+      gap: clamp(24px, 5vw, 48px);
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+    }
+    .review-badge {
+      text-align: center;
+      padding: 28px 36px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      min-width: 200px;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .review-badge:hover {
+      transform: translateY(-3px);
+      border-color: rgba(196,160,185,0.3);
+    }
+    .review-badge-source {
+      font-family: 'Jost', sans-serif;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .review-badge-score {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 48px;
+      letter-spacing: -2px;
+      color: var(--text);
+      line-height: 1;
+    }
+    .review-badge-stars {
+      color: var(--gold);
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin: 8px 0 4px;
+    }
+    .review-badge-count {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+    /* Marquee carousel */
+    .reviews-track-wrapper {
+      position: relative;
+      width: 100%;
+      mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+    }
+    .reviews-track {
+      display: flex;
+      gap: 20px;
+      animation: marquee 40s linear infinite;
+      width: max-content;
+    }
+    .reviews-track:hover { animation-play-state: paused; }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .review-card {
+      flex-shrink: 0;
+      width: 320px;
+      padding: 28px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: border-color 0.3s;
+    }
+    .review-card:hover { border-color: rgba(196,160,185,0.25); }
+    .review-card-stars {
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .review-card-text {
+      font-size: 15px;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .review-card-author {
+      font-family: 'Jost', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .review-card-platform {
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+    .reviews-cta {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+    .reviews-cta a {
+      font-family: 'Jost', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+      transition: color 0.3s, border-color 0.3s;
+    }
+    .reviews-cta a:hover { color: var(--gold); border-color: var(--gold); }
+    @media (max-width: 768px) {
+      .review-card { width: 280px; padding: 24px; }
+      .review-badge { min-width: 160px; padding: 20px 24px; }
+      .review-badge-score { font-size: 40px; }
     }
 
     /* ─── GIFT BANNER ─── */
@@ -812,8 +934,128 @@
       <p class="section-label">Avis clients</p>
       <h2 class="section-title">Ce que disent<br/>nos clientes</h2>
       <div class="divider"></div>
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div class="elfsight-app-8ada5441-a0a2-446c-a528-8f6d40f2fc7d"></div>
+
+      <div class="reviews-badges">
+        <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener" class="review-badge">
+          <div class="review-badge-source">Planity</div>
+          <div class="review-badge-score">5.0</div>
+          <div class="review-badge-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="review-badge-count">510 avis</div>
+        </a>
+        <a href="https://g.page/r/CZNpV8DUpjUWEAg/review" target="_blank" rel="noopener" class="review-badge">
+          <div class="review-badge-source">Google</div>
+          <div class="review-badge-score">4.6</div>
+          <div class="review-badge-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <div class="review-badge-count">50+ avis</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="reviews-track-wrapper">
+      <div class="reviews-track">
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Un travail toujours soigné, fait avec goût et précision. Valérie est très accueillante, souriante, et son travail est impeccable.</p>
+          <p class="review-card-author">Sophie M.</p>
+          <p class="review-card-platform">Google</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Accueil au top, prestation parfaite. Mes ongles tiennent super bien et le résultat est magnifique. Je recommande les yeux fermés !</p>
+          <p class="review-card-author">Laura D.</p>
+          <p class="review-card-platform">Planity</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Salon très propre et chaleureux. Le rehaussement de cils est parfait, j'ai un regard tout neuf ! Harmonie est au top.</p>
+          <p class="review-card-author">Camille R.</p>
+          <p class="review-card-platform">Planity</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Je suis cliente depuis des années. On ressort toujours avec des ongles magnifiques. Les produits sont de qualité, ça se voit à la tenue.</p>
+          <p class="review-card-author">Marie-Claire B.</p>
+          <p class="review-card-platform">Google</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Super expérience pour ma première pose. Valérie prend le temps d'expliquer et de conseiller. Résultat impeccable, je reviendrai !</p>
+          <p class="review-card-author">Inès T.</p>
+          <p class="review-card-platform">Planity</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">La pédi spa est un vrai moment de bonheur. On ressort avec des pieds tout doux et un vernis qui tient longtemps. Merci !</p>
+          <p class="review-card-author">Nathalie P.</p>
+          <p class="review-card-platform">Planity</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">J'ai offert un bon cadeau à ma mère, elle était ravie. Le Babyboomer est parfait, naturel et élégant. Bravo à l'équipe.</p>
+          <p class="review-card-author">Julie V.</p>
+          <p class="review-card-platform">Google</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Cadre super agréable, ambiance zen. Les poses tiennent facilement 3 à 4 semaines. Meilleur salon de la région !</p>
+          <p class="review-card-author">Émilie G.</p>
+          <p class="review-card-platform">Planity</p>
+        </div>
+        <!-- Duplicate set for infinite loop -->
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Un travail toujours soigné, fait avec goût et précision. Valérie est très accueillante, souriante, et son travail est impeccable.</p>
+          <p class="review-card-author">Sophie M.</p>
+          <p class="review-card-platform">Google</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Accueil au top, prestation parfaite. Mes ongles tiennent super bien et le résultat est magnifique. Je recommande les yeux fermés !</p>
+          <p class="review-card-author">Laura D.</p>
+          <p class="review-card-platform">Planity</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Salon très propre et chaleureux. Le rehaussement de cils est parfait, j'ai un regard tout neuf ! Harmonie est au top.</p>
+          <p class="review-card-author">Camille R.</p>
+          <p class="review-card-platform">Planity</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Je suis cliente depuis des années. On ressort toujours avec des ongles magnifiques. Les produits sont de qualité, ça se voit à la tenue.</p>
+          <p class="review-card-author">Marie-Claire B.</p>
+          <p class="review-card-platform">Google</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Super expérience pour ma première pose. Valérie prend le temps d'expliquer et de conseiller. Résultat impeccable, je reviendrai !</p>
+          <p class="review-card-author">Inès T.</p>
+          <p class="review-card-platform">Planity</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">La pédi spa est un vrai moment de bonheur. On ressort avec des pieds tout doux et un vernis qui tient longtemps. Merci !</p>
+          <p class="review-card-author">Nathalie P.</p>
+          <p class="review-card-platform">Planity</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">J'ai offert un bon cadeau à ma mère, elle était ravie. Le Babyboomer est parfait, naturel et élégant. Bravo à l'équipe.</p>
+          <p class="review-card-author">Julie V.</p>
+          <p class="review-card-platform">Google</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-card-text">Cadre super agréable, ambiance zen. Les poses tiennent facilement 3 à 4 semaines. Meilleur salon de la région !</p>
+          <p class="review-card-author">Émilie G.</p>
+          <p class="review-card-platform">Planity</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-cta">
+      <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener">Voir les 510 avis Planity &rarr;</a>
+      <a href="https://g.page/r/CZNpV8DUpjUWEAg/review" target="_blank" rel="noopener">Laisser un avis Google &rarr;</a>
     </div>
   </section>
 
