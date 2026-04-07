@@ -9,7 +9,23 @@
       "Bash(vercel --version)",
       "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\")",
       "Read(//opt/homebrew/bin/**)",
-      "Bash(brew list:*)"
+      "Bash(brew list:*)",
+      "WebFetch(domain:espaceongles.vercel.app)",
+      "Bash(ls \"/Users/benjaminsanchez/Desktop/Capture\"*)",
+      "Bash(sips -s format png \"/Users/benjaminsanchez/Desktop/Capture d''écran 2026-04-07 à 13.26.12.heic\" --out /tmp/capture_dns.png)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Bash(sips -s format png \"$f\" --out /tmp/capture_dns.png)",
+      "Bash(done)",
+      "Bash(dig +short espace-ongles.fr A)",
+      "Bash(dig +short www.espace-ongles.fr CNAME)",
+      "Bash(do sips:*)",
+      "WebFetch(domain:www.planity.com)",
+      "WebSearch",
+      "WebFetch(domain:www.fresha.com)",
+      "WebFetch(domain:fr.mappy.com)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:developers.google.com)"
     ]
   }
 }
