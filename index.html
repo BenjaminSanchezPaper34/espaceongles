@@ -19,12 +19,11 @@
   <meta property="og:image" content="https://espace-ongles.fr/images/logomauve-espaceongles_poster_.png"/>
   <meta property="og:locale" content="fr_FR"/>
   <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 
   <style>
-    @font-face { font-family:'Foco'; src:url('fonts/foco-webfont.woff') format('woff'); font-weight:400; font-style:normal; }
-    @font-face { font-family:'Foco'; src:url('fonts/foco_light_italic-webfont.woff') format('woff'); font-weight:300; font-style:italic; }
-    @font-face { font-family:'Rift Soft'; src:url('fonts/rift_soft_bold-webfont.woff') format('woff'); font-weight:700; font-style:normal; }
-    @font-face { font-family:'Rift Soft'; src:url('fonts/rift_soft_medium-webfont.woff') format('woff'); font-weight:500; font-style:normal; }
 
     @property --gradient-angle { syntax:'<angle>'; initial-value:0deg; inherits:false; }
     @property --glow-opacity { syntax:'<number>'; initial-value:0; inherits:false; }
@@ -49,7 +48,7 @@
     html { scroll-behavior: auto; /* Lenis handles this */ }
 
     body {
-      font-family: 'Foco', system-ui, sans-serif;
+      font-family: 'Jost', system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -116,8 +115,8 @@
     .header-logo:hover img { transform: scale(1.05); }
     .header-nav { display: flex; gap: 32px; align-items: center; }
     .header-nav a {
-      font-family: 'Rift Soft', sans-serif;
-      font-weight: 500;
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
       font-size: 12px;
       letter-spacing: 2.5px;
       text-transform: uppercase;
@@ -136,7 +135,7 @@
     .header-nav a:hover, .header-nav a.active { color: var(--text); }
     .header-nav a:hover::after, .header-nav a.active::after { width: 100%; }
     .header-cta {
-      font-family: 'Rift Soft', sans-serif;
+      font-family: 'Jost', sans-serif;
       font-weight: 700;
       font-size: 11px;
       letter-spacing: 2.5px;
@@ -171,7 +170,7 @@
     }
     .mobile-menu.open { display:flex; }
     .mobile-menu a {
-      font-family:'Rift Soft',sans-serif; font-weight:700;
+      font-family:'Cormorant Garamond',serif; font-weight:700;
       font-size:clamp(20px, 5vw, 28px); letter-spacing:4px;
       text-transform:uppercase; color:var(--text-muted);
       transition:color 0.3s;
@@ -229,7 +228,7 @@
       transform: translateY(20px);
     }
     .hero-eyebrow {
-      font-family: 'Rift Soft', sans-serif;
+      font-family: 'Cormorant Garamond', serif;
       font-weight: 500;
       font-size: clamp(11px, 1.5vw, 13px);
       letter-spacing: 5px;
@@ -240,11 +239,12 @@
       transform: translateY(20px);
     }
     .hero h1 {
-      font-family: 'Rift Soft', sans-serif;
+      font-family: 'Cormorant Garamond', serif;
       font-weight: 700;
-      font-size: clamp(36px, 8vw, 72px);
-      letter-spacing: -1px;
-      line-height: 1.05;
+      font-size: clamp(40px, 9vw, 80px);
+      letter-spacing: -2px;
+      line-height: 1;
+      font-weight: 300;
       margin-bottom: 20px;
     }
     .hero h1 .line {
@@ -255,9 +255,10 @@
     }
     .hero h1 .line-muted {
       color: var(--accent-light);
-      font-weight: 500;
-      font-size: 0.55em;
-      letter-spacing: 3px;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 0.45em;
+      letter-spacing: 0;
     }
     .hero-sub {
       font-size: clamp(14px, 2vw, 17px);
@@ -278,7 +279,7 @@
       transform: translateY(20px);
     }
     .btn {
-      font-family: 'Rift Soft', sans-serif;
+      font-family: 'Jost', sans-serif;
       font-weight: 700;
       font-size: 12px;
       letter-spacing: 2.5px;
@@ -335,19 +336,19 @@
     .section-inner { max-width: 1100px; margin: 0 auto; }
 
     .section-label {
-      font-family: 'Rift Soft', sans-serif;
-      font-weight: 500;
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
       font-size: 11px;
-      letter-spacing: 5px;
+      letter-spacing: 4px;
       text-transform: uppercase;
       color: var(--gold);
       margin-bottom: 16px;
     }
     .section-title {
-      font-family: 'Rift Soft', sans-serif;
-      font-weight: 700;
-      font-size: clamp(28px, 5vw, 48px);
-      letter-spacing: -0.5px;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(32px, 5.5vw, 56px);
+      letter-spacing: -1px;
       line-height: 1.1;
       margin-bottom: 16px;
     }
@@ -402,10 +403,10 @@
       border-radius: 14px;
     }
     .service-card h3 {
-      font-family: 'Rift Soft', sans-serif;
-      font-weight: 700;
-      font-size: 20px;
-      letter-spacing: 0.5px;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-size: 22px;
+      letter-spacing: 0;
       margin-bottom: 10px;
     }
     .service-card p {
@@ -416,7 +417,7 @@
       margin-bottom: 16px;
     }
     .service-card .price {
-      font-family: 'Rift Soft', sans-serif;
+      font-family: 'Cormorant Garamond', serif;
       font-weight: 700;
       font-size: 18px;
       color: var(--gold);
@@ -448,8 +449,8 @@
       background: linear-gradient(135deg, rgba(212,165,116,0.15), rgba(196,160,185,0.15));
       border: 1px solid rgba(212,165,116,0.2);
       color: var(--gold);
-      font-family: 'Rift Soft', sans-serif;
-      font-weight: 500;
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
       font-size: 11px;
       letter-spacing: 2px;
       padding: 6px 16px;
@@ -458,10 +459,10 @@
       margin-bottom: 16px;
     }
     .split-text h2 {
-      font-family: 'Rift Soft', sans-serif;
-      font-weight: 700;
-      font-size: clamp(28px, 4vw, 44px);
-      letter-spacing: -0.5px;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(32px, 5vw, 52px);
+      letter-spacing: -1px;
       margin-bottom: 20px;
     }
     .split-text p {
@@ -494,9 +495,9 @@
       background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(212,165,116,0.06) 0%, transparent 70%);
     }
     .gift-banner h2 {
-      font-family: 'Rift Soft', sans-serif;
-      font-weight: 700;
-      font-size: clamp(24px, 4vw, 36px);
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(28px, 5vw, 44px);
       margin-bottom: 12px;
       position: relative;
     }
@@ -517,8 +518,8 @@
       align-items: start;
     }
     .contact-info h3 {
-      font-family: 'Rift Soft', sans-serif;
-      font-weight: 500;
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
       font-size: 11px;
       letter-spacing: 4px;
       text-transform: uppercase;
@@ -526,9 +527,9 @@
       margin-bottom: 16px;
     }
     .contact-phone {
-      font-family: 'Rift Soft', sans-serif;
-      font-weight: 700;
-      font-size: clamp(24px, 3.5vw, 32px);
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: clamp(26px, 4vw, 36px);
       letter-spacing: -0.5px;
       display: block;
       margin-bottom: 16px;
@@ -561,12 +562,12 @@
       border-bottom: 1px solid var(--border);
     }
     .contact-horaires .row span:last-child {
-      font-family: 'Rift Soft', sans-serif;
+      font-family: 'Cormorant Garamond', serif;
       font-weight: 500;
       letter-spacing: 1px;
       color: var(--text);
     }
-    .contact-horaires .closed span:last-child { color: var(--text-dim); font-style: italic; font-family: 'Foco', sans-serif; font-weight: 300; }
+    .contact-horaires .closed span:last-child { color: var(--text-dim); font-style: italic; font-family: 'Jost', sans-serif; font-weight: 300; }
     .contact-map {
       border-radius: var(--radius);
       overflow: hidden;
@@ -584,8 +585,8 @@
     .footer-logo img { height: 32px; margin: 0 auto 20px; opacity: 0.6; }
     .footer-links { display: flex; justify-content: center; gap: 28px; margin-bottom: 20px; flex-wrap: wrap; }
     .footer-links a {
-      font-family: 'Rift Soft', sans-serif;
-      font-weight: 500; font-size: 11px;
+      font-family: 'Jost', sans-serif;
+      font-weight: 400; font-size: 11px;
       letter-spacing: 2px; text-transform: uppercase;
       color: var(--text-dim);
       transition: color 0.3s;
@@ -612,7 +613,7 @@
     .floating-cta a {
       flex: 1;
       text-align: center;
-      font-family: 'Rift Soft', sans-serif;
+      font-family: 'Cormorant Garamond', serif;
       font-weight: 700;
       font-size: 12px;
       letter-spacing: 2px;
