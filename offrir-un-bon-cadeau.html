@@ -4,110 +4,130 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bon Cadeau Manucure Pézenas | Offrir un Soin — Espace Ongles</title>
-  <meta name="description" content="Offrez un bon cadeau manucure, pose d'ongles ou pédicure spa chez Espace Ongles à Pézenas (34120). Dès 49€. Bon imprimable envoyé par mail. Réservation sur Planity."/>
-  <meta name="keywords" content="bon cadeau manucure Pézenas, offrir manucure, cadeau pose ongles, bon cadeau pédicure, idée cadeau beauté Hérault"/>
+  <meta name="description" content="Offrez un bon cadeau manucure, pose d'ongles ou pédicure spa chez Espace Ongles à Pézenas (34120). Dès 49€. Bon imprimable envoyé par mail."/>
   <link rel="canonical" href="https://espace-ongles.fr/offrir-un-bon-cadeau.html"/>
   <meta property="og:title" content="Bon Cadeau Manucure Pézenas | Offrir un Soin — Espace Ongles"/>
-  <meta property="og:description" content="Offrez un bon cadeau manucure, pose d'ongles ou pédicure spa. Dès 49€. Espace Ongles Pézenas (34120)."/>
+  <meta property="og:description" content="Offrez un bon cadeau manucure ou pédicure spa. Dès 49€. Espace Ongles Pézenas (34120)."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://espace-ongles.fr/offrir-un-bon-cadeau.html"/>
   <meta property="og:image" content="https://espace-ongles.fr/images/logomauve-espaceongles_poster_.png"/>
   <meta property="og:locale" content="fr_FR"/>
-  <meta property="og:site_name" content="Espace Ongles Pézenas"/>
   <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 
   <style>
-    @font-face { font-family:'Foco'; src:url('fonts/foco-webfont.woff') format('woff'); font-weight:400; font-style:normal; }
-    @font-face { font-family:'Foco'; src:url('fonts/foco_light_italic-webfont.woff') format('woff'); font-weight:300; font-style:italic; }
-    @font-face { font-family:'Rift Soft'; src:url('fonts/rift_soft_bold-webfont.woff') format('woff'); font-weight:700; font-style:normal; }
-    @font-face { font-family:'Rift Soft'; src:url('fonts/rift_soft_medium-webfont.woff') format('woff'); font-weight:500; font-style:normal; }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    :root { --bg:#1a0a19; --bg-card:rgba(255,255,255,0.04); --surface:#2a1428; --accent:#c4a0b9; --accent-light:#e8d5e2; --gold:#d4a574; --text:#f5f0f4; --text-muted:rgba(245,240,244,0.5); --text-dim:rgba(245,240,244,0.3); --border:rgba(196,160,185,0.12); --radius:20px; }
+    body { font-family:'Jost',system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.7; font-size:16px; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+    a { color:inherit; text-decoration:none; }
+    img { max-width:100%; height:auto; display:block; }
+    body::after { content:''; position:fixed; inset:0; z-index:9999; pointer-events:none; opacity:0.035; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-repeat:repeat; background-size:200px; }
+    .gradient-bg { position:fixed; inset:0; z-index:-1; background: radial-gradient(ellipse 80% 50% at 20% 40%,rgba(100,30,90,0.15) 0%,transparent 70%), radial-gradient(ellipse 60% 60% at 80% 20%,rgba(180,120,160,0.08) 0%,transparent 70%), radial-gradient(ellipse 50% 80% at 50% 80%,rgba(212,165,116,0.06) 0%,transparent 70%), var(--bg); animation:gradientShift 20s ease-in-out infinite alternate; }
+    @keyframes gradientShift { 0%{filter:hue-rotate(0deg);} 100%{filter:hue-rotate(8deg);} }
 
-    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-    :root{--purple:#461E44;--purple-dark:#320A30;--beige:#E1D2D3;--white:#FFFFFF;}
-    html{scroll-behavior:smooth;}
-    body{font-family:'Foco',Arial,sans-serif;background:var(--purple);color:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;}
-    a{color:inherit;text-decoration:none;}
-    img{max-width:100%;height:auto;display:block;}
+    .header { position:fixed; top:0; left:0; right:0; z-index:1000; padding:0 clamp(16px,4vw,40px); background:rgba(26,10,25,0.8); backdrop-filter:saturate(180%) blur(24px); -webkit-backdrop-filter:saturate(180%) blur(24px); border-bottom:1px solid var(--border); }
+    .header-inner { max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; height:72px; }
+    .header-logo img { height:40px; }
+    .header-nav { display:flex; gap:32px; align-items:center; }
+    .header-nav a { font-family:'Jost',sans-serif; font-weight:400; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--text-muted); transition:color 0.3s; position:relative; }
+    .header-nav a::after { content:''; position:absolute; bottom:-4px; left:0; width:0; height:1px; background:var(--accent); transition:width 0.4s cubic-bezier(0.16,1,0.3,1); }
+    .header-nav a:hover,.header-nav a.active { color:var(--text); }
+    .header-nav a:hover::after,.header-nav a.active::after { width:100%; }
+    .header-cta { font-family:'Jost',sans-serif; font-weight:500; font-size:12px; letter-spacing:2px; text-transform:uppercase; background:linear-gradient(135deg,var(--accent),var(--gold)); color:var(--bg); padding:10px 28px; border-radius:100px; transition:all 0.4s; border:none; }
+    .header-cta:hover { transform:translateY(-1px); box-shadow:0 8px 32px rgba(196,160,185,0.25); }
+    .hamburger { display:none; cursor:pointer; width:24px; height:16px; position:relative; z-index:1001; }
+    .hamburger span { display:block; width:100%; height:1.5px; background:var(--text); position:absolute; left:0; transition:all 0.4s cubic-bezier(0.16,1,0.3,1); }
+    .hamburger span:nth-child(1){top:0;} .hamburger span:nth-child(2){top:7px;} .hamburger span:nth-child(3){top:14px;}
+    .hamburger.open span:nth-child(1){transform:rotate(45deg);top:7px;} .hamburger.open span:nth-child(2){opacity:0;} .hamburger.open span:nth-child(3){transform:rotate(-45deg);top:7px;}
+    .mobile-menu { display:none; position:fixed; inset:0; background:var(--bg); z-index:999; flex-direction:column; justify-content:center; align-items:center; gap:28px; }
+    .mobile-menu.open { display:flex; }
+    .mobile-menu a { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:clamp(20px,5vw,28px); letter-spacing:2px; color:var(--text-muted); transition:color 0.3s; }
+    .mobile-menu a:hover { color:var(--text); }
+    .mobile-menu .menu-cta { font-family:'Jost',sans-serif; font-weight:500; font-size:14px; letter-spacing:2px; text-transform:uppercase; margin-top:20px; background:linear-gradient(135deg,var(--accent),var(--gold)); color:var(--bg); padding:14px 40px; border-radius:100px; }
 
-    .header{position:sticky;top:0;z-index:100;background:rgba(70,30,68,0.95);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);padding:16px 20px;}
-    .header-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
-    .header-logo img{height:44px;}
-    .header-nav{display:flex;gap:28px;align-items:center;}
-    .header-nav a{font-family:'Rift Soft',sans-serif;font-weight:500;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;opacity:.75;transition:opacity .3s;}
-    .header-nav a:hover,.header-nav a.active{opacity:1;}
-    .header-cta{font-family:'Rift Soft',sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;background:var(--beige);color:var(--purple);padding:10px 24px;border-radius:30px;border:1px solid var(--beige);transition:all .3s;}
-    .header-cta:hover{background:transparent;color:var(--white);border-color:var(--white);}
-    .hamburger{display:none;cursor:pointer;width:28px;height:20px;position:relative;}
-    .hamburger span{display:block;width:100%;height:2px;background:var(--white);position:absolute;left:0;transition:all .3s;}
-    .hamburger span:nth-child(1){top:0;}.hamburger span:nth-child(2){top:9px;}.hamburger span:nth-child(3){top:18px;}
-    .hamburger.open span:nth-child(1){transform:rotate(45deg);top:9px;}.hamburger.open span:nth-child(2){opacity:0;}.hamburger.open span:nth-child(3){transform:rotate(-45deg);top:9px;}
-    .mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--purple-dark);z-index:99;flex-direction:column;justify-content:center;align-items:center;gap:32px;}
-    .mobile-menu.open{display:flex;}
-    .mobile-menu a{font-family:'Rift Soft',sans-serif;font-weight:700;font-size:24px;letter-spacing:3px;text-transform:uppercase;opacity:.8;transition:opacity .3s;}
-    .mobile-menu a:hover{opacity:1;}
+    .hero { padding:140px 20px 60px; text-align:center; border-bottom:1px solid var(--border); }
+    .hero h1 { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:clamp(36px,7vw,64px); letter-spacing:-2px; line-height:1.05; margin-bottom:16px; }
+    .hero p { font-size:clamp(16px,2vw,19px); color:var(--text-muted); font-weight:300; font-style:italic; max-width:500px; margin:0 auto; line-height:1.8; }
 
-    .hero{background:var(--purple-dark);text-align:center;padding:60px 20px 50px;}
-    .hero h1{font-family:'Rift Soft',sans-serif;font-weight:700;font-size:clamp(28px,5vw,44px);letter-spacing:2px;margin-bottom:10px;}
-    .hero p{font-size:17px;color:var(--beige);font-style:italic;font-weight:300;max-width:550px;margin:0 auto;}
+    .content { max-width:700px; margin:0 auto; padding:60px 20px 80px; }
 
-    .content{max-width:700px;margin:0 auto;padding:50px 20px 60px;}
-    .gift-card{background:rgba(255,255,255,0.05);border:1px solid rgba(225,210,211,0.15);border-radius:16px;padding:24px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;transition:transform .3s,box-shadow .3s;cursor:pointer;}
-    .gift-card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,0.2);}
-    .gift-info{flex:1;}
-    .gift-name{font-family:'Rift Soft',sans-serif;font-weight:700;font-size:18px;letter-spacing:1px;margin-bottom:4px;}
-    .gift-duration{font-size:13px;color:var(--beige);opacity:.7;}
-    .gift-price{font-family:'Rift Soft',sans-serif;font-weight:700;font-size:26px;white-space:nowrap;padding-left:20px;}
-    .gift-arrow{margin-left:16px;opacity:.4;font-size:20px;}
-
-    .info-box{background:rgba(225,210,211,0.08);border-radius:12px;padding:24px;margin-top:32px;text-align:center;}
-    .info-box p{font-size:14px;color:var(--beige);font-weight:300;font-style:italic;line-height:1.7;}
-    .info-box a{color:var(--white);text-decoration:underline;text-underline-offset:3px;}
-
-    .cta-section{background:var(--beige);text-align:center;padding:50px 20px;color:var(--purple);}
-    .cta-section h2{font-family:'Rift Soft',sans-serif;font-weight:700;font-size:28px;letter-spacing:2px;margin-bottom:8px;}
-    .cta-section p{font-size:16px;margin-bottom:24px;}
-    .btn-dark{display:inline-block;background:var(--purple);color:var(--white);font-family:'Rift Soft',sans-serif;font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding:14px 40px;border-radius:30px;border:1px solid var(--purple);transition:all .3s;}
-    .btn-dark:hover{background:transparent;color:var(--purple);}
-
-    .footer{text-align:center;padding:32px 20px 20px;border-top:1px solid rgba(225,210,211,0.1);}
-    .footer-logo img{height:36px;margin:0 auto 14px;}
-    .footer-links{display:flex;justify-content:center;gap:24px;margin-bottom:14px;flex-wrap:wrap;}
-    .footer-links a{font-family:'Rift Soft',sans-serif;font-weight:500;font-size:12px;letter-spacing:1px;text-transform:uppercase;opacity:.6;transition:opacity .3s;}
-    .footer-links a:hover{opacity:1;}
-    .footer-legal{font-size:11px;color:rgba(225,210,211,0.4);margin-bottom:10px;}
-    .footer-credit a{opacity:.35;transition:opacity .3s;}.footer-credit a:hover{opacity:.8;}
-    .footer-credit img{height:16px;display:inline;}
-
-    @media(max-width:768px){
-      .header-nav,.header-cta{display:none;}
-      .hamburger{display:block;}
-      .hero{padding:40px 20px 30px;}
-      .gift-card{flex-direction:column;align-items:flex-start;gap:8px;}
-      .gift-price{padding-left:0;}
-      .gift-arrow{display:none;}
+    .gift-card {
+      display:flex; justify-content:space-between; align-items:center;
+      background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius);
+      padding:28px; margin-bottom:16px;
+      transition:all 0.4s cubic-bezier(0.16,1,0.3,1); cursor:pointer; position:relative; overflow:hidden;
     }
+    .gift-card::before {
+      content:''; position:absolute; inset:0;
+      background:radial-gradient(circle at 50% 0%,rgba(212,165,116,0.06) 0%,transparent 60%);
+      opacity:0; transition:opacity 0.4s;
+    }
+    .gift-card:hover { transform:translateY(-3px); border-color:rgba(196,160,185,0.25); box-shadow:0 16px 48px rgba(0,0,0,0.2); }
+    .gift-card:hover::before { opacity:1; }
+    .gift-info { flex:1; position:relative; }
+    .gift-name { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:20px; margin-bottom:4px; }
+    .gift-duration { font-size:13px; color:var(--text-dim); }
+    .gift-price { font-family:'Cormorant Garamond',serif; font-weight:600; font-size:28px; color:var(--gold); white-space:nowrap; padding-left:20px; position:relative; }
+    .gift-arrow { margin-left:16px; color:var(--text-dim); font-size:20px; transition:transform 0.3s,color 0.3s; position:relative; }
+    .gift-card:hover .gift-arrow { transform:translateX(4px); color:var(--gold); }
+
+    .info-box {
+      background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius);
+      padding:28px; margin-top:36px; text-align:center;
+    }
+    .info-box p { font-size:15px; color:var(--text-muted); font-weight:300; font-style:italic; line-height:1.8; }
+    .info-box a { color:var(--gold); border-bottom:1px solid rgba(212,165,116,0.3); padding-bottom:1px; transition:border-color 0.3s; }
+    .info-box a:hover { border-color:var(--gold); }
+
+    .cta-section { text-align:center; padding:60px 20px; border-top:1px solid var(--border); background:var(--surface); }
+    .cta-section h2 { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:clamp(28px,4vw,40px); letter-spacing:-1px; margin-bottom:12px; }
+    .cta-section p { color:var(--text-muted); font-size:17px; font-weight:300; font-style:italic; margin-bottom:32px; }
+    .btn { font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:2px; text-transform:uppercase; padding:16px 40px; border-radius:100px; transition:all 0.4s; cursor:pointer; display:inline-block; }
+    .btn-glow { background:linear-gradient(135deg,var(--accent),var(--gold)); color:var(--bg); border:none; }
+    .btn-glow:hover { transform:translateY(-2px); box-shadow:0 12px 40px rgba(196,160,185,0.3); }
+
+    .footer { text-align:center; padding:40px 20px 24px; border-top:1px solid var(--border); }
+    .footer-logo img { height:32px; margin:0 auto 20px; opacity:0.6; }
+    .footer-links { display:flex; justify-content:center; gap:28px; margin-bottom:20px; flex-wrap:wrap; }
+    .footer-links a { font-family:'Jost',sans-serif; font-weight:400; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--text-dim); transition:color 0.3s; }
+    .footer-links a:hover { color:var(--text); }
+    .footer-legal { font-size:12px; color:var(--text-dim); margin-bottom:12px; }
+    .footer-credit a { opacity:0.25; transition:opacity 0.3s; }
+    .footer-credit a:hover { opacity:0.6; }
+    .footer-credit img { height:14px; display:inline; }
+
+    .reveal { opacity:0; transform:translateY(24px); transition:opacity 0.7s cubic-bezier(0.16,1,0.3,1),transform 0.7s cubic-bezier(0.16,1,0.3,1); }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    @media(prefers-reduced-motion:reduce) { .reveal { opacity:1; transform:none; transition:none; } }
+
+    @media(max-width:768px) {
+      .header-nav,.header-cta { display:none; }
+      .hamburger { display:block; }
+      .gift-card { flex-direction:column; align-items:flex-start; gap:8px; }
+      .gift-price { padding-left:0; }
+      .gift-arrow { display:none; }
+      .hero { padding:120px 20px 40px; }
+    }
+    @media(min-width:769px) { .hamburger { display:none; } }
   </style>
 
   <script type="application/ld+json">
-  [{
-    "@context":"https://schema.org","@type":"BreadcrumbList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://espace-ongles.fr/index.html"},
-      {"@type":"ListItem","position":2,"name":"Bons cadeaux","item":"https://espace-ongles.fr/offrir-un-bon-cadeau.html"}
-    ]
-  },{
-    "@context":"https://schema.org","@type":"ItemList","name":"Bons Cadeaux Espace Ongles Pézenas",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Bon cadeau Pose complète","offers":{"@type":"Offer","price":"60.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}},
-      {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Bon cadeau Pose complète + remplissage","offers":{"@type":"Offer","price":"108.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}},
-      {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Bon cadeau Rehaussement de cils + teinture","offers":{"@type":"Offer","price":"70.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}},
-      {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Bon cadeau Pédi spa + vernis permanent","offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}},
-      {"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Bon cadeau Soin des pieds","offers":{"@type":"Offer","price":"49.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}}
-    ]
-  }]
+  [{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://espace-ongles.fr/index.html"},
+    {"@type":"ListItem","position":2,"name":"Bons cadeaux","item":"https://espace-ongles.fr/offrir-un-bon-cadeau.html"}
+  ]},{"@context":"https://schema.org","@type":"ItemList","name":"Bons Cadeaux Espace Ongles Pézenas","itemListElement":[
+    {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Bon cadeau Pose complète","offers":{"@type":"Offer","price":"60.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}},
+    {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Bon cadeau Pose complète + remplissage","offers":{"@type":"Offer","price":"108.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}},
+    {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Bon cadeau Rehaussement de cils + teinture","offers":{"@type":"Offer","price":"70.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}},
+    {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Bon cadeau Pédi spa + vernis permanent","offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}},
+    {"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Bon cadeau Soin des pieds","offers":{"@type":"Offer","price":"49.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}}
+  ]}]
   </script>
 </head>
 <body>
+  <div class="gradient-bg"></div>
 
   <header class="header">
     <div class="header-inner">
@@ -127,61 +147,37 @@
     <a href="prestations.html">Prestations</a>
     <a href="le-salon.html">Le Salon</a>
     <a href="offrir-un-bon-cadeau.html">Bons Cadeaux</a>
-    <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener" style="color:var(--beige);">Réserver</a>
+    <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener" class="menu-cta">Réserver</a>
   </div>
 
   <section class="hero">
-    <h1>Offrir un bon cadeau</h1>
+    <h1>Offrir un moment<br/>de bien-être</h1>
     <p>Faites plaisir à vos proches avec un soin au salon Espace Ongles. Bon imprimable envoyé par mail.</p>
   </section>
 
   <main class="content">
-    <a href="https://giftcard.sumup.io/order/GO7E9XA/espace-ongles" target="_blank" rel="noopener" class="gift-card">
-      <div class="gift-info">
-        <div class="gift-name">Pose complète</div>
-        <div class="gift-duration">1 heure</div>
-      </div>
-      <div class="gift-price">60 €</div>
-      <div class="gift-arrow">&rarr;</div>
+    <a href="https://giftcard.sumup.io/order/GO7E9XA/espace-ongles" target="_blank" rel="noopener" class="gift-card reveal">
+      <div class="gift-info"><div class="gift-name">Pose complète</div><div class="gift-duration">1 heure</div></div>
+      <div class="gift-price">60 €</div><div class="gift-arrow">&rarr;</div>
+    </a>
+    <a href="https://giftcard.sumup.io/order/GO7E9XA/espace-ongles" target="_blank" rel="noopener" class="gift-card reveal">
+      <div class="gift-info"><div class="gift-name">Pose complète + remplissage</div><div class="gift-duration">1 heure</div></div>
+      <div class="gift-price">108 €</div><div class="gift-arrow">&rarr;</div>
+    </a>
+    <a href="https://giftcard.sumup.io/order/GO7E9XA/espace-ongles" target="_blank" rel="noopener" class="gift-card reveal">
+      <div class="gift-info"><div class="gift-name">Rehaussement de cils + teinture</div><div class="gift-duration">1 heure</div></div>
+      <div class="gift-price">70 €</div><div class="gift-arrow">&rarr;</div>
+    </a>
+    <a href="https://giftcard.sumup.io/order/GO7E9XA/espace-ongles" target="_blank" rel="noopener" class="gift-card reveal">
+      <div class="gift-info"><div class="gift-name">Pédi spa soin complet + vernis permanent</div><div class="gift-duration">1 heure</div></div>
+      <div class="gift-price">79 €</div><div class="gift-arrow">&rarr;</div>
+    </a>
+    <a href="https://giftcard.sumup.io/order/GO7E9XA/espace-ongles" target="_blank" rel="noopener" class="gift-card reveal">
+      <div class="gift-info"><div class="gift-name">Soin des pieds</div><div class="gift-duration">40 minutes</div></div>
+      <div class="gift-price">49 €</div><div class="gift-arrow">&rarr;</div>
     </a>
 
-    <a href="https://giftcard.sumup.io/order/GO7E9XA/espace-ongles" target="_blank" rel="noopener" class="gift-card">
-      <div class="gift-info">
-        <div class="gift-name">Pose complète + remplissage</div>
-        <div class="gift-duration">1 heure</div>
-      </div>
-      <div class="gift-price">108 €</div>
-      <div class="gift-arrow">&rarr;</div>
-    </a>
-
-    <a href="https://giftcard.sumup.io/order/GO7E9XA/espace-ongles" target="_blank" rel="noopener" class="gift-card">
-      <div class="gift-info">
-        <div class="gift-name">Rehaussement de cils + teinture</div>
-        <div class="gift-duration">1 heure</div>
-      </div>
-      <div class="gift-price">70 €</div>
-      <div class="gift-arrow">&rarr;</div>
-    </a>
-
-    <a href="https://giftcard.sumup.io/order/GO7E9XA/espace-ongles" target="_blank" rel="noopener" class="gift-card">
-      <div class="gift-info">
-        <div class="gift-name">Pédi spa soin complet + vernis permanent</div>
-        <div class="gift-duration">1 heure</div>
-      </div>
-      <div class="gift-price">79 €</div>
-      <div class="gift-arrow">&rarr;</div>
-    </a>
-
-    <a href="https://giftcard.sumup.io/order/GO7E9XA/espace-ongles" target="_blank" rel="noopener" class="gift-card">
-      <div class="gift-info">
-        <div class="gift-name">Soin des pieds</div>
-        <div class="gift-duration">40 minutes</div>
-      </div>
-      <div class="gift-price">49 €</div>
-      <div class="gift-arrow">&rarr;</div>
-    </a>
-
-    <div class="info-box">
+    <div class="info-box reveal">
       <p>Suite à l'achat du bon cadeau, vous recevrez une copie imprimable par mail.<br/>
       La personne bénéficiaire pourra choisir le jour de la prestation de son choix sur <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener">planity.fr</a></p>
     </div>
@@ -190,16 +186,13 @@
   <section class="cta-section">
     <h2>Vous préférez réserver pour vous ?</h2>
     <p>Prenez rendez-vous en quelques clics sur Planity.</p>
-    <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener" class="btn-dark">Prendre rendez-vous</a>
+    <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener" class="btn btn-glow">Prendre rendez-vous</a>
   </section>
 
   <footer class="footer">
     <div class="footer-logo"><img src="images/logomauve-espaceongles.svg" alt="Logo Espace Ongles Pézenas"/></div>
     <div class="footer-links">
-      <a href="index.html">Accueil</a>
-      <a href="prestations.html">Prestations</a>
-      <a href="le-salon.html">Le Salon</a>
-      <a href="offrir-un-bon-cadeau.html">Bons Cadeaux</a>
+      <a href="index.html">Accueil</a><a href="prestations.html">Prestations</a><a href="le-salon.html">Le Salon</a><a href="offrir-un-bon-cadeau.html">Bons Cadeaux</a>
     </div>
     <p class="footer-legal">ESPACE ONGLES &copy; 2025 — Tous droits réservés</p>
     <p class="footer-credit"><a href="https://paper34.fr" target="_blank" rel="noopener"><img src="images/logoblanc-paper34.svg" alt="Site créé par Paper34"/></a></p>
@@ -209,6 +202,7 @@
     const hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobile-menu');
     hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open');document.body.style.overflow=mobileMenu.classList.contains('open')?'hidden':'';});
     mobileMenu.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open');document.body.style.overflow='';}));
+    if(!window.matchMedia('(prefers-reduced-motion:reduce)').matches){const o=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target);}});},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.reveal').forEach(el=>o.observe(el));}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));}
   </script>
 </body>
 </html>
