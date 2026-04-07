@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /phone/
+
+Sitemap: https://espace-ongles.fr/sitemap.xml

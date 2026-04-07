@@ -2,94 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://espace-ongles.fr/index.html</loc>
-    <lastmod>2024-01-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="https://espace-ongles.fr/phone/index.html"/>
     <image:image>
-      <image:loc>https://espace-ongles.fr/images/logoblanc-espaceongles.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/phone-espaceongles.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/logomauve-espaceongles.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/logoblanc-paper34.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/facebook-espaceongles.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/instagram-espaceongles.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/calendrier-espaceongles.svg</image:loc>
-    </image:image>
-    <image:image>
       <image:loc>https://espace-ongles.fr/images/image0358x358.jpg</image:loc>
+      <image:title>Pose d'ongles en gel Espace Ongles Pézenas</image:title>
     </image:image>
     <image:image>
       <image:loc>https://espace-ongles.fr/images/image1358x358.jpg</image:loc>
+      <image:title>Manucure et nail art Espace Ongles Pézenas</image:title>
     </image:image>
     <image:image>
       <image:loc>https://espace-ongles.fr/images/image2-crop-u3538.jpg</image:loc>
+      <image:title>Résultat manucure professionnelle Espace Ongles</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://espace-ongles.fr/images/facebook-espaceongles2.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/instagram-espaceongles2.svg</image:loc>
+      <image:loc>https://espace-ongles.fr/images/logomauve-espaceongles_poster_.png</image:loc>
+      <image:title>Logo Espace Ongles salon manucure Pézenas</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://espace-ongles.fr/offrir-un-bon-cadeau.html</loc>
-    <lastmod>2024-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="https://espace-ongles.fr/phone/offrir-un-bon-cadeau.html"/>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/logoblanc-espaceongles.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/logomauve-espaceongles.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/logoblanc-paper34.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/facebook-espaceongles.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/instagram-espaceongles.svg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://espace-ongles.fr/images/calendrier-espaceongles.svg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://espace-ongles.fr/assets/image.png</loc>
-    <lastmod>2021-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://espace-ongles.fr/assets/tarifs-a4-espaceongles.pdf</loc>
-    <lastmod>2021-07-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://espace-ongles.fr/assets/videofull.mp4</loc>
-    <lastmod>2021-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://espace-ongles.fr/assets/videofull.webm</loc>
-    <lastmod>2021-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
 </urlset>
