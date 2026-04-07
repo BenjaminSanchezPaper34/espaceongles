@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salon de Manucure à Pézenas | Espace Ongles — Institut Beauté Hérault</title>
+  <meta name="description" content="Espace Ongles, votre salon de manucure et institut de beauté au coeur de Pézenas (34120). Pose d'ongles en gel, extension de cils, pédicure spa. Équipe passionnée, produits de qualité. 9 Place Bonnet."/>
+  <meta name="keywords" content="salon manucure Pézenas, institut beauté Pézenas, onglerie Hérault, onglerie Pézenas centre ville, manucure gel 34120, extension cils Hérault, salon ongles Occitanie"/>
+  <meta name="geo.region" content="FR-34"/>
+  <meta name="geo.placename" content="Pézenas"/>
+  <meta name="geo.position" content="43.4614;3.4231"/>
+  <meta name="ICBM" content="43.4614, 3.4231"/>
+  <link rel="canonical" href="https://espace-ongles.fr/le-salon.html"/>
+  <meta property="og:title" content="Espace Ongles — Salon de Manucure à Pézenas (34120)"/>
+  <meta property="og:description" content="Votre salon de manucure au coeur de Pézenas. Pose d'ongles en gel, extension de cils, pédicure spa. Équipe passionnée et produits de qualité."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://espace-ongles.fr/le-salon.html"/>
+  <meta property="og:image" content="https://espace-ongles.fr/images/logomauve-espaceongles_poster_.png"/>
+  <meta property="og:locale" content="fr_FR"/>
+  <meta property="og:site_name" content="Espace Ongles Pézenas"/>
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+
+  <style>
+    @font-face {
+      font-family: 'Foco';
+      src: url('fonts/foco-webfont.woff') format('woff'), url('fonts/foco-webfont.svg') format('svg');
+      font-weight: 400; font-style: normal;
+    }
+    @font-face {
+      font-family: 'Foco';
+      src: url('fonts/foco_light_italic-webfont.woff') format('woff'), url('fonts/foco_light_italic-webfont.svg') format('svg');
+      font-weight: 300; font-style: italic;
+    }
+    @font-face {
+      font-family: 'Rift Soft';
+      src: url('fonts/rift_soft_bold-webfont.woff') format('woff'), url('fonts/rift_soft_bold-webfont.svg') format('svg');
+      font-weight: 700; font-style: normal;
+    }
+    @font-face {
+      font-family: 'Rift Soft';
+      src: url('fonts/rift_soft_medium-webfont.woff') format('woff'), url('fonts/rift_soft_medium-webfont.svg') format('svg');
+      font-weight: 500; font-style: normal;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Foco', Arial, sans-serif;
+      background-color: #461E44;
+      color: #FFFFFF;
+      line-height: 1.6;
+    }
+    a { color: #FFFFFF; text-decoration: none; }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+    .header-logo img { height: 57px; }
+    .header-nav { display: flex; gap: 24px; align-items: center; }
+    .header-nav a {
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    .header-nav a:hover, .header-nav a.active { opacity: 1; }
+    .header-social { display: flex; gap: 16px; align-items: center; }
+    .header-social img { width: 17px; height: 17px; opacity: 0.8; transition: opacity 0.3s; }
+    .header-social img:hover { opacity: 1; }
+
+    /* Hero */
+    .hero {
+      background-color: #320A30;
+      text-align: center;
+      padding: 60px 20px 50px;
+    }
+    .hero h1 {
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: clamp(28px, 5vw, 44px);
+      letter-spacing: 2px;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #E1D2D3;
+      font-style: italic;
+      font-weight: 300;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    /* Section */
+    .section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+    .section-alt {
+      background-color: #E1D2D3;
+      color: #461E44;
+    }
+    .section-alt .section-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+    .section-title {
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    .section-alt .section-title { color: #461E44; }
+    .section-text {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .section-text:last-child { margin-bottom: 0; }
+    .section-alt .section-text { color: #461E44; }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .grid-item {
+      text-align: center;
+      padding: 24px;
+      border: 1px solid rgba(225, 210, 211, 0.2);
+      border-radius: 12px;
+    }
+    .grid-item-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    .grid-item h3 {
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .grid-item p {
+      font-size: 14px;
+      color: #E1D2D3;
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    /* Horaires */
+    .horaires {
+      max-width: 500px;
+      margin: 24px auto 0;
+    }
+    .horaire-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(70, 30, 68, 0.15);
+      font-size: 16px;
+    }
+    .horaire-row:last-child { border-bottom: none; }
+    .horaire-day { font-weight: 400; }
+    .horaire-time { font-family: 'Rift Soft', sans-serif; font-weight: 500; letter-spacing: 1px; }
+    .horaire-closed { color: rgba(70, 30, 68, 0.5); font-style: italic; }
+
+    /* Map */
+    .map-container {
+      margin-top: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 3px solid rgba(225, 210, 211, 0.3);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+    }
+
+    /* CTA */
+    .cta-section {
+      background-color: #320A30;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .cta-section h2 {
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    .cta-section p {
+      color: #E1D2D3;
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background-color: #E1D2D3;
+      color: #461E44;
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 2px;
+      padding: 14px 40px;
+      border-radius: 30px;
+      border: 1px solid #E1D2D3;
+      transition: all 0.3s;
+      text-transform: uppercase;
+    }
+    .cta-btn:hover {
+      background-color: transparent;
+      color: #E1D2D3;
+    }
+    .cta-phone {
+      display: block;
+      margin-top: 16px;
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 1px;
+      color: #E1D2D3;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #461E44;
+    }
+    .footer-logo img { height: 40px; margin-bottom: 12px; }
+    .footer-contact { font-size: 14px; color: #E1D2D3; margin-bottom: 8px; }
+    .footer-contact a { color: #E1D2D3; }
+    .footer-legal { font-size: 12px; color: rgba(225, 210, 211, 0.5); margin-top: 16px; }
+    .footer-credit { margin-top: 8px; }
+    .footer-credit a { opacity: 0.5; transition: opacity 0.3s; }
+    .footer-credit a:hover { opacity: 1; }
+    .footer-credit img { height: 18px; }
+
+    @media (max-width: 768px) {
+      .header { padding: 16px 20px; flex-wrap: wrap; gap: 12px; }
+      .header-nav { gap: 16px; }
+      .header-nav a { font-size: 12px; }
+      .header-social { display: none; }
+      .hero { padding: 40px 20px 30px; }
+      .grid { grid-template-columns: 1fr; }
+      .cta-btn { display: block; width: 80%; margin: 0 auto; text-align: center; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://espace-ongles.fr/index.html" },
+      { "@type": "ListItem", "position": 2, "name": "Le Salon", "item": "https://espace-ongles.fr/le-salon.html" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "NailSalon",
+    "name": "Espace Ongles",
+    "description": "Salon de manucure et institut de beauté au coeur de Pézenas. Pose d'ongles en gel, extension de cils, pédicure spa. Équipe passionnée et produits professionnels de qualité.",
+    "url": "https://espace-ongles.fr",
+    "telephone": "+33650612204",
+    "email": "espaceongles341.vz@gmail.com",
+    "image": "https://espace-ongles.fr/images/logomauve-espaceongles_poster_.png",
+    "logo": "https://espace-ongles.fr/images/logomauve-espaceongles_poster_.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 Place Bonnet",
+      "addressLocality": "Pézenas",
+      "postalCode": "34120",
+      "addressRegion": "Hérault",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.4614,
+      "longitude": 3.4231
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday", "Friday", "Saturday"], "opens": "09:00", "closes": "19:00" }
+    ],
+    "priceRange": "€€",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 43.4614, "longitude": 3.4231 },
+      "geoRadius": "30000"
+    },
+    "sameAs": [
+      "https://www.facebook.com/Espace-ongles-onglerie-1122062854484643",
+      "https://www.instagram.com/espace_ongles_onglerie/",
+      "https://www.planity.com/espace-ongles-34120-pezenas"
+    ]
+  }]
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="header-logo">
+      <img src="images/logoblanc-espaceongles.svg" alt="Logo Espace Ongles salon manucure Pézenas" height="57"/>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html">Accueil</a>
+      <a href="prestations.html">Prestations</a>
+      <a href="le-salon.html" class="active">Le Salon</a>
+      <a href="offrir-un-bon-cadeau.html">Bons Cadeaux</a>
+    </nav>
+    <div class="header-social">
+      <a href="https://www.facebook.com/Espace-ongles-onglerie-1122062854484643" target="_blank" rel="noopener"><img src="images/facebook-espaceongles.svg" alt="Facebook Espace Ongles"/></a>
+      <a href="https://www.instagram.com/espace_ongles_onglerie/" target="_blank" rel="noopener"><img src="images/instagram-espaceongles.svg" alt="Instagram Espace Ongles"/></a>
+      <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener"><img src="images/calendrier-espaceongles.svg" alt="Réserver sur Planity"/></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Votre salon de manucure au coeur de Pézenas</h1>
+    <p>Un espace dédié à la beauté de vos ongles, de vos cils et de vos pieds, dans le centre historique de Pézenas.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Bienvenue chez Espace Ongles</h2>
+    <p class="section-text">Situé au <strong>9 Place Bonnet</strong>, en plein coeur du centre-ville de <strong>Pézenas</strong> dans l'Hérault (34120), Espace Ongles est votre salon de manucure de référence en Occitanie. Depuis notre ouverture, nous mettons notre savoir-faire au service de la beauté de vos ongles, de vos cils et de vos pieds.</p>
+    <p class="section-text">Notre équipe passionnée vous accueille dans un cadre chaleureux et soigné, du lundi au samedi. Que vous souhaitiez une <strong>pose d'ongles en gel</strong>, une <strong>extension de cils</strong>, un <strong>rehaussement de cils</strong> ou une <strong>pédicure spa</strong>, nous utilisons exclusivement des <strong>produits professionnels de qualité</strong> pour garantir un résultat irréprochable et une tenue longue durée.</p>
+    <p class="section-text">Nous vous proposons également un service de <strong>bons cadeaux</strong> pour offrir un moment de détente et de bien-être à vos proches. Chaque bon est envoyé par mail sous forme imprimable, et la personne bénéficiaire choisit librement son créneau sur Planity.</p>
+  </section>
+
+  <div class="section-alt">
+    <div class="section-inner">
+      <h2 class="section-title">Pourquoi choisir Espace Ongles ?</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <div class="grid-item-icon">&#9733;</div>
+          <h3>Produits de qualité</h3>
+          <p>Nous sélectionnons des marques professionnelles pour la tenue, le confort et la santé de vos ongles.</p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item-icon">&#9829;</div>
+          <h3>Expertise & passion</h3>
+          <p>Notre équipe est formée aux dernières techniques de manucure, nail art et extension de cils.</p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item-icon">&#9201;</div>
+          <h3>Réservation facile</h3>
+          <p>Prenez rendez-vous 24h/24 en ligne sur Planity. Choisissez votre prestation, le jour et l'heure qui vous conviennent.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-alt">
+    <div class="section-inner" style="padding-top: 0;">
+      <h2 class="section-title">Horaires d'ouverture</h2>
+      <div class="horaires">
+        <div class="horaire-row">
+          <span class="horaire-day">Lundi</span>
+          <span class="horaire-time">9h00 — 19h00</span>
+        </div>
+        <div class="horaire-row">
+          <span class="horaire-day">Mardi</span>
+          <span class="horaire-time">9h00 — 19h00</span>
+        </div>
+        <div class="horaire-row">
+          <span class="horaire-day">Mercredi</span>
+          <span class="horaire-time horaire-closed">Fermé</span>
+        </div>
+        <div class="horaire-row">
+          <span class="horaire-day">Jeudi</span>
+          <span class="horaire-time">9h00 — 19h00</span>
+        </div>
+        <div class="horaire-row">
+          <span class="horaire-day">Vendredi</span>
+          <span class="horaire-time">9h00 — 19h00</span>
+        </div>
+        <div class="horaire-row">
+          <span class="horaire-day">Samedi</span>
+          <span class="horaire-time">9h00 — 19h00</span>
+        </div>
+        <div class="horaire-row">
+          <span class="horaire-day">Dimanche</span>
+          <span class="horaire-time horaire-closed">Fermé</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <h2 class="section-title">Nous trouver</h2>
+    <p class="section-text">Espace Ongles se situe au <strong>9 Place Bonnet, 34120 Pézenas</strong>, à deux pas du centre historique. Facilement accessible à pied depuis les rues commerçantes de Pézenas, le salon se trouve également à proximité des communes de <strong>Béziers</strong>, <strong>Agde</strong>, <strong>Montagnac</strong>, <strong>Lézignan-la-Cèbe</strong> et <strong>Nézignan-l'Évêque</strong>.</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.5!2d3.4231!3d43.4614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b13f4a0a0a0a0a%3A0x0!2s9+Place+Bonnet%2C+34120+P%C3%A9zenas!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Espace Ongles Pézenas sur Google Maps"></iframe>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Envie de prendre soin de vous ?</h2>
+    <p>Réservez votre prochain rendez-vous en quelques clics ou appelez-nous directement.</p>
+    <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener" class="cta-btn">Prendre rendez-vous en ligne</a>
+    <a href="tel:+33650612204" class="cta-phone">06 50 61 22 04</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="images/logomauve-espaceongles.svg" alt="Logo Espace Ongles Pézenas"/>
+    </div>
+    <p class="footer-contact">
+      <a href="https://maps.apple.com/?q=Espace%20Ongles%209%20place%20bonnet,%2034120%20P%C3%A9zenas">9 Place Bonnet, 34120 Pézenas</a><br/>
+      <a href="tel:+33650612204">06 50 61 22 04</a> &mdash;
+      <a href="mailto:espaceongles341.vz@gmail.com">espaceongles341.vz@gmail.com</a>
+    </p>
+    <p class="footer-legal">ESPACE ONGLES &copy; 2025 &mdash; Tous droits réservés</p>
+    <p class="footer-credit">
+      <a href="https://paper34.fr" target="_blank" rel="noopener">
+        <img src="images/logoblanc-paper34.svg" alt="Site créé par Paper34"/>
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tarifs & Prestations Manucure Pézenas | Espace Ongles (34120)</title>
+  <meta name="description" content="Découvrez les tarifs et prestations du salon Espace Ongles à Pézenas : pose d'ongles en gel dès 60€, extension de cils, rehaussement, pédicure spa, soin des pieds. Réservez en ligne."/>
+  <meta name="keywords" content="tarif manucure Pézenas, prix pose ongles gel, extension cils prix, pédicure spa tarif, onglerie Pézenas 34120, nail art prix Hérault"/>
+  <meta name="geo.region" content="FR-34"/>
+  <meta name="geo.placename" content="Pézenas"/>
+  <link rel="canonical" href="https://espace-ongles.fr/prestations.html"/>
+  <meta property="og:title" content="Tarifs & Prestations — Espace Ongles Pézenas"/>
+  <meta property="og:description" content="Pose d'ongles en gel, extension de cils, pédicure spa. Tous nos tarifs et prestations. Salon de manucure à Pézenas (34120)."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://espace-ongles.fr/prestations.html"/>
+  <meta property="og:image" content="https://espace-ongles.fr/images/logomauve-espaceongles_poster_.png"/>
+  <meta property="og:locale" content="fr_FR"/>
+  <meta property="og:site_name" content="Espace Ongles Pézenas"/>
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="preconnect" href="https://www.planity.com"/>
+
+  <style>
+    @font-face {
+      font-family: 'Foco';
+      src: url('fonts/foco-webfont.woff') format('woff'), url('fonts/foco-webfont.svg') format('svg');
+      font-weight: 400; font-style: normal;
+    }
+    @font-face {
+      font-family: 'Foco';
+      src: url('fonts/foco_light_italic-webfont.woff') format('woff'), url('fonts/foco_light_italic-webfont.svg') format('svg');
+      font-weight: 300; font-style: italic;
+    }
+    @font-face {
+      font-family: 'Rift Soft';
+      src: url('fonts/rift_soft_bold-webfont.woff') format('woff'), url('fonts/rift_soft_bold-webfont.svg') format('svg');
+      font-weight: 700; font-style: normal;
+    }
+    @font-face {
+      font-family: 'Rift Soft';
+      src: url('fonts/rift_soft_medium-webfont.woff') format('woff'), url('fonts/rift_soft_medium-webfont.svg') format('svg');
+      font-weight: 500; font-style: normal;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Foco', Arial, sans-serif;
+      background-color: #461E44;
+      color: #FFFFFF;
+      line-height: 1.6;
+    }
+
+    a { color: #FFFFFF; text-decoration: none; }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+    .header-logo img { height: 57px; }
+    .header-nav { display: flex; gap: 24px; align-items: center; }
+    .header-nav a {
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    .header-nav a:hover, .header-nav a.active { opacity: 1; }
+    .header-social { display: flex; gap: 16px; align-items: center; }
+    .header-social img { width: 17px; height: 17px; opacity: 0.8; transition: opacity 0.3s; }
+    .header-social img:hover { opacity: 1; }
+
+    /* Hero */
+    .hero {
+      background-color: #320A30;
+      text-align: center;
+      padding: 60px 20px 50px;
+    }
+    .hero h1 {
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: clamp(32px, 5vw, 48px);
+      letter-spacing: 2px;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #E1D2D3;
+      font-style: italic;
+      font-weight: 300;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Content */
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    /* Category */
+    .category {
+      margin-bottom: 50px;
+    }
+    .category-title {
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 2px;
+      color: #E1D2D3;
+      border-bottom: 2px solid rgba(225, 210, 211, 0.3);
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+    }
+
+    /* Service Card */
+    .service {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .service:last-child { border-bottom: none; }
+    .service-info { flex: 1; padding-right: 20px; }
+    .service-name {
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .service-desc {
+      font-size: 14px;
+      color: #E1D2D3;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    .service-duration {
+      font-size: 13px;
+      color: rgba(225, 210, 211, 0.7);
+      margin-top: 4px;
+    }
+    .service-price {
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      color: #FFFFFF;
+      white-space: nowrap;
+      min-width: 80px;
+      text-align: right;
+    }
+
+    /* CTA */
+    .cta-section {
+      background-color: #E1D2D3;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .cta-section h2 {
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 2px;
+      color: #461E44;
+      margin-bottom: 8px;
+    }
+    .cta-section p {
+      color: #461E44;
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background-color: #461E44;
+      color: #FFFFFF;
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 2px;
+      padding: 14px 40px;
+      border-radius: 30px;
+      border: 1px solid #461E44;
+      transition: all 0.3s;
+      text-transform: uppercase;
+    }
+    .cta-btn:hover {
+      background-color: transparent;
+      color: #461E44;
+    }
+    .cta-btn-secondary {
+      display: inline-block;
+      background-color: transparent;
+      color: #461E44;
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 2px;
+      padding: 14px 40px;
+      border-radius: 30px;
+      border: 1px solid #461E44;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      margin-left: 12px;
+    }
+    .cta-btn-secondary:hover {
+      background-color: #461E44;
+      color: #FFFFFF;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #461E44;
+    }
+    .footer-logo img { height: 40px; margin-bottom: 12px; }
+    .footer-contact {
+      font-size: 14px;
+      color: #E1D2D3;
+      margin-bottom: 8px;
+    }
+    .footer-contact a { color: #E1D2D3; }
+    .footer-legal {
+      font-size: 12px;
+      color: rgba(225, 210, 211, 0.5);
+      margin-top: 16px;
+    }
+    .footer-credit { margin-top: 8px; }
+    .footer-credit a { opacity: 0.5; transition: opacity 0.3s; }
+    .footer-credit a:hover { opacity: 1; }
+    .footer-credit img { height: 18px; }
+
+    /* Badge */
+    .badge {
+      display: inline-block;
+      background-color: rgba(225, 210, 211, 0.2);
+      color: #E1D2D3;
+      font-size: 12px;
+      font-family: 'Rift Soft', sans-serif;
+      font-weight: 500;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header { padding: 16px 20px; flex-wrap: wrap; gap: 12px; }
+      .header-nav { gap: 16px; }
+      .header-nav a { font-size: 12px; }
+      .hero { padding: 40px 20px 30px; }
+      .content { padding: 30px 16px 40px; }
+      .service { flex-direction: column; gap: 8px; }
+      .service-price { text-align: left; }
+      .cta-btn, .cta-btn-secondary { display: block; margin: 8px auto; width: 80%; text-align: center; }
+      .cta-btn-secondary { margin-left: auto; }
+      .header-social { display: none; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://espace-ongles.fr/index.html" },
+      { "@type": "ListItem", "position": 2, "name": "Prestations & Tarifs", "item": "https://espace-ongles.fr/prestations.html" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "NailSalon",
+    "name": "Espace Ongles",
+    "url": "https://espace-ongles.fr",
+    "telephone": "+33650612204",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 Place Bonnet",
+      "addressLocality": "Pézenas",
+      "postalCode": "34120",
+      "addressCountry": "FR"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Prestations Espace Ongles Pézenas",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Soins des ongles",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pose complète ongles en gel", "description": "Pose d'ongles en gel sur ongles naturels avec choix de couleur et finition" }, "price": "60.00", "priceCurrency": "EUR" },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Remplissage ongles en gel", "description": "Remplissage de la repousse pour maintenir la pose en gel" }, "price": "48.00", "priceCurrency": "EUR" },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pose complète + remplissage", "description": "Forfait pose complète et remplissage inclus" }, "price": "108.00", "priceCurrency": "EUR" },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dépose ongles en gel", "description": "Retrait professionnel de la pose en gel sans abîmer l'ongle naturel" }, "price": "25.00", "priceCurrency": "EUR" },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nail art", "description": "Décorations et motifs personnalisés sur les ongles" }, "price": "5.00", "priceCurrency": "EUR" }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Soins des cils",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Extension de cils", "description": "Extension de cils cil à cil pour un regard sublimé, réalisée par Harmonie" }, "price": "80.00", "priceCurrency": "EUR" },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rehaussement de cils + teinture", "description": "Rehaussement naturel des cils avec teinture pour un effet mascara longue durée" }, "price": "70.00", "priceCurrency": "EUR" }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Soins des pieds",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pédi spa soin complet + vernis permanent", "description": "Pédicure spa complète avec bain, gommage, soin hydratant et vernis semi-permanent" }, "price": "79.00", "priceCurrency": "EUR" },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Soin des pieds", "description": "Soin complet des pieds pour retrouver confort et douceur" }, "price": "49.00", "priceCurrency": "EUR" }
+          ]
+        }
+      ]
+    }
+  }]
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="header-logo">
+      <img src="images/logoblanc-espaceongles.svg" alt="Logo Espace Ongles salon manucure Pézenas" height="57"/>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html">Accueil</a>
+      <a href="prestations.html" class="active">Prestations</a>
+      <a href="le-salon.html">Le Salon</a>
+      <a href="offrir-un-bon-cadeau.html">Bons Cadeaux</a>
+    </nav>
+    <div class="header-social">
+      <a href="https://www.facebook.com/Espace-ongles-onglerie-1122062854484643" target="_blank" rel="noopener"><img src="images/facebook-espaceongles.svg" alt="Facebook Espace Ongles"/></a>
+      <a href="https://www.instagram.com/espace_ongles_onglerie/" target="_blank" rel="noopener"><img src="images/instagram-espaceongles.svg" alt="Instagram Espace Ongles"/></a>
+      <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener"><img src="images/calendrier-espaceongles.svg" alt="Réserver sur Planity"/></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Nos Prestations & Tarifs</h1>
+    <p>Des soins de qualité pour sublimer vos ongles, vos cils et vos pieds. Tous les prix sont indicatifs, consultez Planity pour les tarifs à jour.</p>
+  </section>
+
+  <main class="content">
+
+    <section class="category">
+      <h2 class="category-title">Soins des ongles</h2>
+
+      <article class="service">
+        <div class="service-info">
+          <h3 class="service-name">Pose complète ongles en gel</h3>
+          <p class="service-desc">Pose d'ongles en gel sur ongles naturels. Choix de couleur, French manucure ou nail art. Produits de qualité pour une tenue longue durée et un résultat irréprochable.</p>
+          <p class="service-duration">Durée : environ 1h</p>
+        </div>
+        <div class="service-price">60 €</div>
+      </article>
+
+      <article class="service">
+        <div class="service-info">
+          <h3 class="service-name">Remplissage</h3>
+          <p class="service-desc">Entretien de votre pose en gel. Remplissage de la repousse pour maintenir un résultat parfait.</p>
+          <p class="service-duration">Durée : environ 45 min</p>
+        </div>
+        <div class="service-price">48 €</div>
+      </article>
+
+      <article class="service">
+        <div class="service-info">
+          <h3 class="service-name">Pose complète + remplissage</h3>
+          <p class="service-desc">Forfait avantageux incluant la pose complète et un remplissage. Idéal pour démarrer avec un suivi complet.</p>
+          <p class="service-duration">Durée : 1h + 45 min</p>
+        </div>
+        <div class="service-price">108 €</div>
+      </article>
+
+      <article class="service">
+        <div class="service-info">
+          <h3 class="service-name">Dépose</h3>
+          <p class="service-desc">Retrait professionnel et soigné de votre pose en gel, sans abîmer l'ongle naturel.</p>
+          <p class="service-duration">Durée : environ 30 min</p>
+        </div>
+        <div class="service-price">25 €</div>
+      </article>
+
+      <article class="service">
+        <div class="service-info">
+          <h3 class="service-name">Nail art</h3>
+          <p class="service-desc">Décorations et motifs personnalisés sur vos ongles. Strass, paillettes, dessins, à la carte.</p>
+        </div>
+        <div class="service-price">dès 5 €</div>
+      </article>
+    </section>
+
+    <section class="category">
+      <h2 class="category-title">Soins des cils</h2>
+
+      <article class="service">
+        <div class="service-info">
+          <span class="badge">Nouveauté</span>
+          <h3 class="service-name">Extension de cils</h3>
+          <p class="service-desc">Extension de cils cil à cil réalisée par Harmonie, experte dans l'art du regard. Effet naturel ou sophistiqué selon vos préférences. Produits de qualité pour une longue tenue.</p>
+          <p class="service-duration">Durée : environ 1h30</p>
+        </div>
+        <div class="service-price">80 €</div>
+      </article>
+
+      <article class="service">
+        <div class="service-info">
+          <h3 class="service-name">Rehaussement de cils + teinture</h3>
+          <p class="service-desc">Sublimez votre regard naturellement. Le rehaussement courbe vos cils et la teinture les intensifie pour un effet mascara longue durée sans maquillage.</p>
+          <p class="service-duration">Durée : environ 1h</p>
+        </div>
+        <div class="service-price">70 €</div>
+      </article>
+    </section>
+
+    <section class="category">
+      <h2 class="category-title">Soins des pieds</h2>
+
+      <article class="service">
+        <div class="service-info">
+          <h3 class="service-name">Pédi spa soin complet + vernis permanent</h3>
+          <p class="service-desc">Un soin complet pour vos pieds : bain relaxant, gommage, soin hydratant et application d'un vernis semi-permanent longue tenue.</p>
+          <p class="service-duration">Durée : environ 1h</p>
+        </div>
+        <div class="service-price">79 €</div>
+      </article>
+
+      <article class="service">
+        <div class="service-info">
+          <h3 class="service-name">Soin des pieds</h3>
+          <p class="service-desc">Soin complet pour retrouver des pieds doux et soignés. Idéal en complément de vos soins ongles.</p>
+          <p class="service-duration">Durée : environ 40 min</p>
+        </div>
+        <div class="service-price">49 €</div>
+      </article>
+    </section>
+
+  </main>
+
+  <section class="cta-section">
+    <h2>Prête à vous faire plaisir ?</h2>
+    <p>Réservez votre créneau en ligne ou offrez un bon cadeau à un proche.</p>
+    <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener" class="cta-btn">Prendre rendez-vous</a>
+    <a href="offrir-un-bon-cadeau.html" class="cta-btn-secondary">Offrir un bon cadeau</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="images/logomauve-espaceongles.svg" alt="Logo Espace Ongles Pézenas"/>
+    </div>
+    <p class="footer-contact">
+      <a href="https://maps.apple.com/?q=Espace%20Ongles%209%20place%20bonnet,%2034120%20P%C3%A9zenas">9 Place Bonnet, 34120 Pézenas</a><br/>
+      <a href="tel:+33650612204">06 50 61 22 04</a> &mdash;
+      <a href="mailto:espaceongles341.vz@gmail.com">espaceongles341.vz@gmail.com</a>
+    </p>
+    <p class="footer-contact">Ouvert du lundi au samedi &mdash; Fermé le mercredi</p>
+    <p class="footer-legal">ESPACE ONGLES &copy; 2025 &mdash; Tous droits réservés</p>
+    <p class="footer-credit">
+      <a href="https://paper34.fr" target="_blank" rel="noopener">
+        <img src="images/logoblanc-paper34.svg" alt="Site créé par Paper34"/>
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
