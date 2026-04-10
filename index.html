@@ -208,6 +208,11 @@
       z-index: 0;
       transform: scale(1.05);
     }
+    .hero-video-mobile { display: none; }
+    @media (max-width: 768px) {
+      .hero-video-desktop { display: none; }
+      .hero-video-mobile { display: block; }
+    }
     .hero-overlay {
       position: absolute; inset: 0;
       background: linear-gradient(
@@ -874,9 +879,12 @@
 
   <!-- HERO -->
   <section class="hero">
-    <video class="hero-video" playsinline autoplay loop muted poster="images/image0358x358.jpg">
+    <video class="hero-video hero-video-desktop" playsinline autoplay loop muted poster="images/image0358x358.jpg">
       <source type="video/mp4" src="assets/videofull.mp4"/>
       <source type="video/webm" src="assets/videofull.webm"/>
+    </video>
+    <video class="hero-video hero-video-mobile" playsinline autoplay loop muted poster="images/image0358x358.jpg">
+      <source type="video/mp4" src="assets/VIDEOMOBILE-ESPACEONGLES.mp4"/>
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
