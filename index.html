@@ -174,8 +174,8 @@
     }
     .mobile-menu.open { display:flex; }
     .mobile-menu a {
-      font-family:'Cormorant Garamond',serif; font-weight:700;
-      font-size:clamp(20px, 5vw, 28px); letter-spacing:4px;
+      font-family:'Jost',sans-serif; font-weight:500;
+      font-size:clamp(16px, 4vw, 20px); letter-spacing:3px;
       text-transform:uppercase; color:var(--text-muted);
       transition:color 0.3s;
     }
@@ -186,7 +186,15 @@
       color: var(--bg);
       padding: 14px 40px;
       border-radius: 100px;
-      font-size: 14px;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+    .mobile-menu .menu-phone {
+      font-family: 'Jost', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: var(--gold);
     }
 
     /* ─── HERO ─── */
@@ -676,9 +684,9 @@
       margin-bottom: 16px;
     }
     .contact-phone {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 400;
-      font-size: clamp(26px, 4vw, 36px);
+      font-family: 'Jost', sans-serif;
+      font-weight: 600;
+      font-size: clamp(24px, 3.5vw, 32px);
       letter-spacing: -0.5px;
       display: block;
       margin-bottom: 16px;
@@ -874,7 +882,7 @@
     <a href="le-salon.html">Le Salon</a>
     <a href="offrir-un-bon-cadeau.html">Bons Cadeaux</a>
     <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener" class="menu-cta">Réserver sur Planity</a>
-    <a href="tel:+33650612204" style="color:var(--gold); font-size:18px; letter-spacing:1px;">06 50 61 22 04</a>
+    <a href="tel:+33650612204" class="menu-phone">06 50 61 22 04</a>
   </div>
 
   <!-- HERO -->
