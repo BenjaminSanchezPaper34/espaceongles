@@ -104,8 +104,8 @@
     .header::after {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 140px;
+      top: -60px; left: 0; right: 0;
+      height: 200px;
       opacity: 0;
       pointer-events: none;
       background: linear-gradient(180deg,
@@ -820,12 +820,13 @@
       .header-nav, .header-cta { display: none; }
       .hamburger { display: block; }
       .header::after {
-        height: 120px;
+        top: -60px;
+        height: 180px;
         opacity: 1;
         background: linear-gradient(180deg,
           rgba(26,10,25,1) 0%,
-          rgba(26,10,25,1) 35%,
-          rgba(26,10,25,0.6) 65%,
+          rgba(26,10,25,1) 45%,
+          rgba(26,10,25,0.6) 75%,
           transparent 100%
         );
       }
