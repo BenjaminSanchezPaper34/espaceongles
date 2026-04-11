@@ -99,25 +99,26 @@
       top: 0; left: 0; right: 0;
       z-index: 1000;
       padding: 0 clamp(16px, 4vw, 40px);
+      padding-top: env(safe-area-inset-top, 0px);
       transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .header::after {
+    .header::before {
       content: '';
       position: absolute;
-      top: -60px; left: 0; right: 0;
-      height: 200px;
+      top: calc(-1 * env(safe-area-inset-top, 0px)); left: 0; right: 0;
+      height: calc(200px + env(safe-area-inset-top, 0px));
       opacity: 0;
       pointer-events: none;
       background: linear-gradient(180deg,
-        rgba(26,10,25,0.85) 0%,
-        rgba(26,10,25,0.6) 40%,
-        rgba(26,10,25,0.3) 70%,
+        rgba(26,10,25,0.92) 0%,
+        rgba(26,10,25,0.75) 35%,
+        rgba(26,10,25,0.45) 60%,
+        rgba(26,10,25,0.15) 80%,
         transparent 100%
       );
       transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-      z-index: -1;
     }
-    .header.scrolled::after { opacity: 1; }
+    .header.scrolled::before { opacity: 1; }
     .header-inner {
       max-width: 1200px;
       margin: 0 auto;
@@ -510,9 +511,7 @@
 
     /* ─── REVIEWS ─── */
     .reviews-section {
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      background: #1f0f1e;
       overflow: hidden;
     }
     .reviews-badges {
@@ -819,18 +818,17 @@
     @media (max-width: 768px) {
       .header-nav, .header-cta { display: none; }
       .hamburger { display: block; }
-      .header {
-        padding-top: env(safe-area-inset-top, 0px);
+      .header::before {
+        opacity: 1;
+        height: calc(140px + env(safe-area-inset-top, 0px));
         background: linear-gradient(180deg,
           rgba(26,10,25,1) 0%,
-          rgba(26,10,25,1) 60%,
-          rgba(26,10,25,0.7) 85%,
+          rgba(26,10,25,1) 40%,
+          rgba(26,10,25,0.7) 70%,
+          rgba(26,10,25,0.3) 85%,
           transparent 100%
         );
-        padding-bottom: 40px;
-        margin-bottom: -40px;
       }
-      .header::after { display: none; }
       .services-grid { grid-template-columns: 1fr; }
       .split { grid-template-columns: 1fr; }
       .split-text { text-align: center; }
@@ -977,7 +975,7 @@
   </section>
 
   <!-- EXTENSION DE CILS -->
-  <section class="section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <section class="section" style="background:var(--surface);">
     <div class="section-inner">
       <div class="split">
         <div class="split-text reveal">
