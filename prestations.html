@@ -99,7 +99,8 @@
     @media(max-width:768px) {
       .header-nav,.header-cta { display:none; }
       .hamburger { display:block; }
-      .header::before { opacity:1; top:calc(-1 * env(safe-area-inset-top,0px)); height:calc(160px + env(safe-area-inset-top,0px)); background:linear-gradient(180deg, rgba(26,10,25,1) 0%, rgba(26,10,25,1) 45%, rgba(26,10,25,0.7) 70%, rgba(26,10,25,0.3) 85%, transparent 100%); }
+      .header { top:calc(-1 * env(safe-area-inset-top,47px)); padding-top:env(safe-area-inset-top,47px); background:var(--bg); }
+      .header::before { display:none; }
       .service { flex-direction:column; gap:8px; }
       .service-price { text-align:left; }
       .btn-ghost { margin-left:0; margin-top:12px; }

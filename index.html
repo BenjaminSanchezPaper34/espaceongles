@@ -820,16 +820,13 @@
     @media (max-width: 768px) {
       .header-nav, .header-cta { display: none; }
       .hamburger { display: block; }
+      .header {
+        top: calc(-1 * env(safe-area-inset-top, 47px));
+        padding-top: env(safe-area-inset-top, 47px);
+        background: var(--bg);
+      }
       .header::before {
-        opacity: 1;
-        top: calc(-1 * env(safe-area-inset-top, 0px));
-        height: calc(110px + env(safe-area-inset-top, 0px));
-        background: linear-gradient(180deg,
-          rgba(26,10,25,1) 0%,
-          rgba(26,10,25,1) 50%,
-          rgba(26,10,25,0.5) 80%,
-          transparent 100%
-        );
+        display: none;
       }
       .services-grid { grid-template-columns: 1fr; }
       .split { grid-template-columns: 1fr; }
