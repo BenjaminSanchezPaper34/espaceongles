@@ -29,8 +29,8 @@
     .gradient-bg { position:fixed; inset:0; z-index:-1; background: radial-gradient(ellipse 80% 50% at 20% 40%,rgba(100,30,90,0.15) 0%,transparent 70%), radial-gradient(ellipse 60% 60% at 80% 20%,rgba(180,120,160,0.08) 0%,transparent 70%), radial-gradient(ellipse 50% 80% at 50% 80%,rgba(212,165,116,0.06) 0%,transparent 70%), var(--bg); animation:gradientShift 20s ease-in-out infinite alternate; }
     @keyframes gradientShift { 0%{filter:hue-rotate(0deg);} 100%{filter:hue-rotate(8deg);} }
 
-    .header { position:fixed; top:0; left:0; right:0; z-index:1000; padding:0 clamp(16px,4vw,40px); padding-top:env(safe-area-inset-top,0px); }
-    .header::before { content:''; position:absolute; top:calc(-1 * env(safe-area-inset-top,0px)); left:0; right:0; height:calc(200px + env(safe-area-inset-top,0px)); opacity:1; pointer-events:none; background:linear-gradient(180deg, rgba(26,10,25,0.92) 0%, rgba(26,10,25,0.75) 35%, rgba(26,10,25,0.45) 60%, rgba(26,10,25,0.15) 80%, transparent 100%); }
+    .header { position:fixed; top:0; left:0; right:0; z-index:1000; padding:0 clamp(16px,4vw,40px); padding-top:env(safe-area-inset-top,0px); isolation:isolate; }
+    .header::before { content:''; position:absolute; top:calc(-1 * env(safe-area-inset-top,60px)); left:0; right:0; height:calc(200px + env(safe-area-inset-top,60px)); opacity:1; pointer-events:none; z-index:-1; background:linear-gradient(180deg, rgba(26,10,25,0.92) 0%, rgba(26,10,25,0.75) 35%, rgba(26,10,25,0.45) 60%, rgba(26,10,25,0.15) 80%, transparent 100%); }
     .header-inner { max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; height:72px; }
     .header-logo img { height:40px; }
     .header-nav { display:flex; gap:32px; align-items:center; }
@@ -108,7 +108,7 @@
     @media(max-width:768px) {
       .header-nav,.header-cta { display:none; }
       .hamburger { display:block; }
-      .header::before { opacity:1; height:calc(140px + env(safe-area-inset-top,0px)); background:linear-gradient(180deg, rgba(26,10,25,1) 0%, rgba(26,10,25,1) 40%, rgba(26,10,25,0.7) 70%, rgba(26,10,25,0.3) 85%, transparent 100%); }
+      .header::before { opacity:1; top:calc(-1 * env(safe-area-inset-top,60px)); height:calc(160px + env(safe-area-inset-top,60px)); background:linear-gradient(180deg, rgba(26,10,25,1) 0%, rgba(26,10,25,1) 45%, rgba(26,10,25,0.7) 70%, rgba(26,10,25,0.3) 85%, transparent 100%); }
       .gift-card { flex-direction:column; align-items:flex-start; gap:8px; }
       .gift-price { padding-left:0; }
       .gift-arrow { display:none; }
