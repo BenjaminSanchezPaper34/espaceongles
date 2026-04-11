@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
   <title>Espace Ongles Pézenas | Salon Manucure, Pose d'Ongles & Extension de Cils (34120)</title>
   <meta name="description" content="Espace Ongles, votre salon de manucure à Pézenas (34120). Pose d'ongles en gel, extension de cils, pédicure spa. Produits de qualité, résultat irréprochable. Ouvert du lundi au samedi. Réservez sur Planity."/>
   <meta name="keywords" content="salon manucure Pézenas, pose ongles Pézenas, extension cils Pézenas, onglerie Hérault, pédicure spa Pézenas, nail art 34120"/>
@@ -106,8 +106,8 @@
     .header::before {
       content: '';
       position: absolute;
-      top: calc(-1 * env(safe-area-inset-top, 60px)); left: 0; right: 0;
-      height: calc(200px + env(safe-area-inset-top, 60px));
+      top: calc(-1 * env(safe-area-inset-top, 0px)); left: 0; right: 0;
+      height: calc(200px + env(safe-area-inset-top, 0px));
       opacity: 0;
       pointer-events: none;
       z-index: -1;
@@ -822,13 +822,12 @@
       .hamburger { display: block; }
       .header::before {
         opacity: 1;
-        top: calc(-1 * env(safe-area-inset-top, 60px));
-        height: calc(160px + env(safe-area-inset-top, 60px));
+        top: calc(-1 * env(safe-area-inset-top, 0px));
+        height: calc(110px + env(safe-area-inset-top, 0px));
         background: linear-gradient(180deg,
           rgba(26,10,25,1) 0%,
-          rgba(26,10,25,1) 45%,
-          rgba(26,10,25,0.7) 70%,
-          rgba(26,10,25,0.3) 85%,
+          rgba(26,10,25,1) 50%,
+          rgba(26,10,25,0.5) 80%,
           transparent 100%
         );
       }
