@@ -819,12 +819,13 @@
     @media (max-width: 768px) {
       .header-nav, .header-cta { display: none; }
       .hamburger { display: block; }
-      .header.scrolled::after {
-        height: 100px;
+      .header::after {
+        height: 120px;
+        opacity: 1;
         background: linear-gradient(180deg,
           rgba(26,10,25,1) 0%,
-          rgba(26,10,25,0.95) 30%,
-          rgba(26,10,25,0.5) 70%,
+          rgba(26,10,25,1) 35%,
+          rgba(26,10,25,0.6) 65%,
           transparent 100%
         );
       }
