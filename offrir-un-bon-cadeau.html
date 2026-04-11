@@ -108,8 +108,8 @@
     @media(max-width:768px) {
       .header-nav,.header-cta { display:none; }
       .hamburger { display:block; }
-      .header { top:calc(-1 * env(safe-area-inset-top,47px)); padding-top:env(safe-area-inset-top,47px); background:var(--bg); }
-      .header::before { display:none; }
+      .header { top:calc(-1 * env(safe-area-inset-top,0px)); padding-top:env(safe-area-inset-top,0px); }
+      .header::before { opacity:1; top:0; height:calc(120px + env(safe-area-inset-top,0px)); background:linear-gradient(180deg, rgba(26,10,25,0.95) 0%, rgba(26,10,25,0.7) 50%, rgba(26,10,25,0.3) 80%, transparent 100%); }
       .gift-card { flex-direction:column; align-items:flex-start; gap:8px; }
       .gift-price { padding-left:0; }
       .gift-arrow { display:none; }
