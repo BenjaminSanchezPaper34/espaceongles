@@ -51,7 +51,7 @@ def fr(note):
 
 
 def remplacer(texte, cle, contenu):
-    motif = re.compile(rf"(<!-- AVIS:{cle}[^>]*-->\n).*?(\s*<!-- /AVIS:{cle} -->)", re.S)
+    motif = re.compile(rf"(<!-- AVIS:{cle}[^>]*-->\n).*?(\n[ \t]*<!-- /AVIS:{cle} -->)", re.S)
     if not motif.search(texte):
         sys.exit(f"Marqueur AVIS:{cle} absent.")
     return motif.sub(lambda m: m.group(1) + contenu + m.group(2), texte, count=1)
@@ -136,7 +136,7 @@ def main():
         f"- Planity : {str(note_p).replace('.', ',')}/5 sur {nb_p} avis vérifiés ({URL_PLANITY})\n"
         f"- Google : {fr(note_g)}/5 sur {nb_g} avis\n"
         f"- Derniers avis Planity :\n{citations}\n"
-        f"- Avis relevés le {date.today():%d/%m/%Y}\n"
+        f"- Avis relevés le {date.today():%d/%m/%Y}"
     )
     llms = RACINE / "llms.txt"
     l = remplacer(llms.read_text(), "LLMS", llms_bloc)
