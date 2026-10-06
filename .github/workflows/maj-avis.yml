@@ -1,0 +1,26 @@
+# Chaque lundi matin : relit la note et les derniers avis publics Planity,
+# régénère index.html + llms.txt, et pousse si quelque chose a changé
+# (le push déclenche le déploiement Vercel).
+name: Mise à jour des avis
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  maj:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/maj-avis.py
+      - name: Commit si changement
+        run: |
+          if git diff --quiet; then echo "Aucun changement"; exit 0; fi
+          git config user.name "espace-ongles-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -am "Avis : mise à jour hebdomadaire Planity"
+          git push
