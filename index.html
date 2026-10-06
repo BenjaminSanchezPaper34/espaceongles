@@ -9,7 +9,7 @@
   <meta name="geo.region" content="FR-34"/>
   <meta name="geo.placename" content="Pézenas"/>
   <meta name="geo.position" content="43.4614;3.4231"/>
-  <link rel="canonical" href="https://espace-ongles.fr/index.html"/>
+  <link rel="canonical" href="https://espace-ongles.fr/"/>
   <link rel="preconnect" href="https://www.planity.com"/>
   <link rel="preconnect" href="https://apps.elfsight.com"/>
   <meta property="og:title" content="Espace Ongles | Onglerie & manucure à Pézenas (34120)"/>
@@ -22,9 +22,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
   <link rel="shortcut icon" href="images/favicon.ico"/>
   <link rel="apple-touch-icon" href="images/logomauve-espaceongles_poster_.png"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/fonts/fonts.css"/>
 
   <style>
 
@@ -865,6 +863,7 @@
     "telephone":"+33650612204","email":"espaceongles341.vz@gmail.com",
     "image":"https://espace-ongles.fr/images/logomauve-espaceongles_poster_.png",
     "address":{"@type":"PostalAddress","streetAddress":"9 Place Bonnet","addressLocality":"Pézenas","postalCode":"34120","addressRegion":"Hérault","addressCountry":"FR"},
+    "hasMap":"https://www.google.com/maps/search/?api=1&query=Espace+Ongles+9+Place+Bonnet+34120+P%C3%A9zenas",
     "geo":{"@type":"GeoCoordinates","latitude":43.4614,"longitude":3.4231},
     "openingHoursSpecification":[
       {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday"],"opens":"09:00","closes":"19:30"},
@@ -874,6 +873,9 @@
     "priceRange":"€€",
     "sameAs":["https://www.facebook.com/Espace-ongles-onglerie-1122062854484643","https://www.instagram.com/espace_ongles_onglerie/","https://www.planity.com/espace-ongles-34120-pezenas"]
   }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://espace-ongles.fr/"}]}
   </script>
   <script type="application/ld+json">
   {
@@ -896,14 +898,14 @@
   <!-- HEADER -->
   <header class="header" id="header">
     <div class="header-inner">
-      <a href="index.html" class="header-logo">
+      <a href="/" class="header-logo">
         <img src="images/logoblanc-espaceongles.svg" alt="Logo Espace Ongles salon manucure Pézenas"/>
       </a>
       <nav class="header-nav">
-        <a href="index.html" class="active">Accueil</a>
-        <a href="prestations.html">Prestations</a>
-        <a href="le-salon.html">Le Salon</a>
-        <a href="offrir-un-bon-cadeau.html">Bons Cadeaux</a>
+        <a href="/" class="active">Accueil</a>
+        <a href="/prestations">Prestations</a>
+        <a href="/le-salon">Le Salon</a>
+        <a href="/offrir-un-bon-cadeau">Bons Cadeaux</a>
       </nav>
       <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener" class="header-cta">Réserver</a>
       <button class="hamburger" id="hamburger" aria-label="Menu" type="button">
@@ -914,23 +916,27 @@
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html">Accueil</a>
-    <a href="prestations.html">Prestations</a>
-    <a href="le-salon.html">Le Salon</a>
-    <a href="offrir-un-bon-cadeau.html">Bons Cadeaux</a>
+    <a href="/">Accueil</a>
+    <a href="/prestations">Prestations</a>
+    <a href="/le-salon">Le Salon</a>
+    <a href="/offrir-un-bon-cadeau">Bons Cadeaux</a>
     <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener" class="menu-cta">Réserver sur Planity</a>
     <a href="tel:+33650612204" class="menu-phone">06 50 61 22 04</a>
   </div>
 
   <!-- HERO -->
   <section class="hero">
-    <video class="hero-video hero-video-desktop" playsinline autoplay loop muted poster="images/image0358x358.jpg">
-      <source type="video/mp4" src="assets/videofull.mp4"/>
-      <source type="video/webm" src="assets/videofull.webm"/>
-    </video>
-    <video class="hero-video hero-video-mobile" playsinline autoplay loop muted poster="images/image0358x358.jpg">
-      <source type="video/mp4" src="assets/VIDEOMOBILE-ESPACEONGLES.mp4"/>
-    </video>
+    <video class="hero-video hero-video-desktop" playsinline autoplay loop muted preload="none" poster="images/image0358x358.jpg" data-src="assets/videofull.mp4"></video>
+    <video class="hero-video hero-video-mobile" playsinline autoplay loop muted preload="none" poster="images/image0358x358.jpg" data-src="assets/VIDEOMOBILE-ESPACEONGLES.mp4"></video>
+    <script>
+      /* Ne charge que la vidéo visible (mobile ≤ 768 px, sinon desktop) : évite 10 Mo inutiles sur téléphone */
+      (function(){
+        var sel = matchMedia('(max-width:768px)').matches ? '.hero-video-mobile' : '.hero-video-desktop';
+        var v = document.querySelector(sel);
+        v.src = v.dataset.src; v.preload = 'auto';
+        var p = v.play(); if (p && p.catch) p.catch(function(){});
+      })();
+    </script>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <img src="images/logoblanc-espaceongles.svg" alt="Espace Ongles Pézenas" class="hero-logo"/>
@@ -943,7 +949,7 @@
       <p class="hero-sub">Pose d'ongles en gel, extension de cils, pédicure spa. Des soins d'exception au coeur de Pézenas.</p>
       <div class="hero-buttons">
         <a href="https://www.planity.com/espace-ongles-34120-pezenas" target="_blank" rel="noopener" class="btn btn-glow">Prendre RDV</a>
-        <a href="prestations.html" class="btn btn-ghost">Nos prestations</a>
+        <a href="/prestations" class="btn btn-ghost">Nos prestations</a>
       </div>
     </div>
     <div class="hero-scroll"><span></span></div>
@@ -978,7 +984,7 @@
         </div>
       </div>
       <div class="section-cta reveal" style="text-align:center;">
-        <a href="prestations.html" class="btn btn-ghost">Voir tous les tarifs</a>
+        <a href="/prestations" class="btn btn-ghost">Voir tous les tarifs</a>
       </div>
     </div>
   </section>
@@ -1164,7 +1170,7 @@
       <p class="section-label">Idée cadeau</p>
       <h2>Offrez un moment<br/>de bien-être</h2>
       <p>Bons cadeaux disponibles dès 49 €. Envoi par mail, utilisable sur toutes nos prestations.</p>
-      <a href="offrir-un-bon-cadeau.html" class="btn btn-glow">Découvrir les bons cadeaux</a>
+      <a href="/offrir-un-bon-cadeau" class="btn btn-glow">Découvrir les bons cadeaux</a>
     </div>
   </section>
 
@@ -1203,10 +1209,10 @@
   <footer class="footer">
     <div class="footer-logo"><img src="images/logomauve-espaceongles.svg" alt="Logo Espace Ongles Pézenas"/></div>
     <div class="footer-links">
-      <a href="index.html">Accueil</a>
-      <a href="prestations.html">Prestations</a>
-      <a href="le-salon.html">Le Salon</a>
-      <a href="offrir-un-bon-cadeau.html">Bons Cadeaux</a>
+      <a href="/">Accueil</a>
+      <a href="/prestations">Prestations</a>
+      <a href="/le-salon">Le Salon</a>
+      <a href="/offrir-un-bon-cadeau">Bons Cadeaux</a>
     </div>
     <p class="footer-legal">ESPACE ONGLES &copy; <script>document.write(new Date().getFullYear())</script> &mdash; Tous droits réservés</p>
     <p class="footer-credit"><a href="https://paper34.fr" target="_blank" rel="noopener"><img src="images/logoblanc-paper34.svg" alt="Site créé par Paper34"/></a></p>
