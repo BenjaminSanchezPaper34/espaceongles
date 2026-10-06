@@ -25,7 +25,14 @@
       "WebFetch(domain:www.fresha.com)",
       "WebFetch(domain:fr.mappy.com)",
       "WebFetch(domain:www.google.com)",
-      "WebFetch(domain:developers.google.com)"
+      "WebFetch(domain:developers.google.com)",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
+      "Bash(npx lighthouse:*)",
+      "Bash(python3 -c ':*)",
+      "Read(//Users/benjaminsanchez/Downloads/**)",
+      "Bash(sips -s format png IMG_3122.HEIC --out /tmp/mobile_header.png)",
+      "Bash(sips -s format png IMG_3124.HEIC --out /tmp/mobile_header2.png)",
+      "Bash(cd \"/Users/benjaminsanchez/Library/Mobile Documents/com~apple~CloudDocs/TRAVAUX/CLAUDE/PAPER34-SEO-KIT\" && grep -n -A 40 \"307\" README.md | head -80)"
     ]
   }
 }
