@@ -1,0 +1,34 @@
+{
+  "_note": "Note et nombre d'avis Google : à mettre à jour à la main (ou via le Radar). Avis Google choisis à la main.",
+  "google": {
+    "note": 4.7,
+    "nombre": 71,
+    "lien": "https://g.page/r/CZNpV8DUpjUWEAE/review"
+  },
+  "avis_google": [
+    {
+      "texte": "Je tiens à souligner la qualité de l'accueil et des échanges. La personne qui s'est occupée de moi a été d'une grande gentillesse et professionnalisme.",
+      "auteur": "Auré Cap"
+    },
+    {
+      "texte": "Je remercie Valérie pour ses prestations qui sont toujours à la hauteur de mes espérances ! Son travail est parfait et son accueil très chaleureux. Je recommande !",
+      "auteur": "REY Alexya"
+    },
+    {
+      "texte": "Très compétente, très gentil, on se sent bien, je recommande. Très bon travail.",
+      "auteur": "Chantal Delogu"
+    },
+    {
+      "texte": "Le travail est toujours soigné, réalisé avec goût et précision. Valérie est très accueillante, toujours avec le sourire, et son travail est impeccable.",
+      "auteur": "Coline Soulier"
+    },
+    {
+      "texte": "Une excellente expérience ! L'onglerie est très accueillante et joliment décorée. Valérie est très professionnelle et à l'écoute. Mes ongles sont magnifiques.",
+      "auteur": "Alina Gliga"
+    },
+    {
+      "texte": "Je recommande à 100 % ! Une femme extraordinaire, d'une gentillesse rare et d'un professionnalisme irréprochable. Mes ongles sont toujours impeccables.",
+      "auteur": "Séverine Chayla"
+    }
+  ]
+}

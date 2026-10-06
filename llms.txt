@@ -21,6 +21,21 @@
 - Pédi spa soin complet : 79 € ; soin des pieds : 49 € ; VSP pieds dès 35 €
 - Bons cadeaux dès 49 €, achetés en ligne, envoyés par e-mail
 
+## Avis clientes
+<!-- AVIS:LLMS -->
+- Planity : 4,96/5 sur 549 avis vérifiés (https://www.planity.com/espace-ongles-34120-pezenas)
+- Google : 4,7/5 sur 71 avis
+- Derniers avis Planity :
+- « Mes pieds sont parfaits! Merci, Valérie! » (Planity, 09/09/2026)
+- « Tout est parfait. Je recommande sans hésiter » (Planity, 05/09/2026)
+- « Très bel accueil pour un premier rdv. Valérie m’a attendue alors que j’étais en retard car je m’étais perdue. Tout était parfait » (Planity, 26/08/2026)
+- « Prestations haut de gamme Je recommande +++++ » (Planity, 03/08/2026)
+- « Enchantée ravie de mes ongles ! 🤩 Merci beaucoup » (Planity, 06/07/2026)
+- Avis relevés le 06/10/2026
+
+
+<!-- /AVIS:LLMS -->
+
 ## Pages
 - [Accueil](https://espace-ongles.fr/) : présentation de l'onglerie, prestations phares, avis clientes, accès
 - [Prestations & tarifs](https://espace-ongles.fr/prestations) : liste complète des soins avec durée et prix
@@ -32,4 +47,4 @@
 - Comment réserver ? En ligne sur Planity ou au 06 50 61 22 04.
 - Peut-on offrir un soin ? Oui, bons cadeaux dès 49 €, envoyés par e-mail.
 
-Mis à jour le 6 octobre 2026.
+Mis à jour le 06/10/2026.
