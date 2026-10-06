@@ -13,12 +13,20 @@
   <meta property="og:description" content="Votre salon de manucure au coeur de Pézenas. Pose d'ongles en gel, extension de cils, pédicure spa."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://espace-ongles.fr/le-salon"/>
-  <meta property="og:image" content="https://espace-ongles.fr/images/logomauve-espaceongles_poster_.png"/>
+  <meta property="og:image" content="https://espace-ongles.fr/images/og-espace-ongles.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="Valérie dans son salon Espace Ongles à Pézenas"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Espace Ongles — Salon de Manucure à Pézenas (34120)"/>
+  <meta name="twitter:description" content="Votre salon de manucure au coeur de Pézenas. Pose d'ongles en gel, extension de cils, pédicure spa."/>
+  <meta name="twitter:image" content="https://espace-ongles.fr/images/og-espace-ongles.jpg"/>
   <meta property="og:locale" content="fr_FR"/>
   <meta name="theme-color" content="#1a0a19"/>
   <link rel="shortcut icon" href="images/favicon.ico"/>
   <link rel="apple-touch-icon" href="images/logomauve-espaceongles_poster_.png"/>
   <link rel="stylesheet" href="/fonts/fonts.css"/>
+  <link rel="stylesheet" href="/assets/tiers.css"/>
 
   <style>
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
@@ -211,9 +219,7 @@
       <p class="section-label">Localisation</p>
       <h2 class="section-title">Nous trouver</h2>
       <p class="section-text">Espace Ongles se situe au <strong>9 Place Bonnet, 34120 Pézenas</strong>, à deux pas du centre historique. Facilement accessible depuis <strong>Béziers</strong>, <strong>Agde</strong>, <strong>Montagnac</strong> et <strong>Nézignan-l'Évêque</strong>.</p>
-      <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.5!2d3.4231!3d43.4614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b13f4a0a0a0a0a%3A0x0!2s9+Place+Bonnet%2C+34120+P%C3%A9zenas!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Espace Ongles Pézenas sur Google Maps"></iframe>
-      </div>
+      <div class="contact-map" data-carte></div>
     </div>
   </section>
 
@@ -229,7 +235,7 @@
     <div class="footer-links">
       <a href="/">Accueil</a><a href="/prestations">Prestations</a><a href="/le-salon">Le Salon</a><a href="/offrir-un-bon-cadeau">Bons Cadeaux</a>
     </div>
-    <p class="footer-legal">ESPACE ONGLES &copy; <script>document.write(new Date().getFullYear())</script> — Tous droits réservés</p>
+    <p class="footer-legal">ESPACE ONGLES &copy; <script>document.write(new Date().getFullYear())</script> &mdash; <a href="/mentions-legales">Mentions légales</a> · <a href="/confidentialite">Confidentialité</a> · <a href="#" data-prefs>Préférences de confidentialité</a></p>
     <p class="footer-credit"><a href="https://paper34.fr" target="_blank" rel="noopener"><img src="images/logoblanc-paper34.svg" alt="Site créé par Paper34"/></a></p>
   </footer>
 
@@ -239,5 +245,7 @@
     mobileMenu.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open');document.body.style.overflow='';}));
     if(!window.matchMedia('(prefers-reduced-motion:reduce)').matches){const o=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target);}});},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.reveal').forEach(el=>o.observe(el));}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));}
   </script>
+  <script src="/assets/tiers.js" defer></script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

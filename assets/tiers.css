@@ -1,0 +1,45 @@
+/* Carte (repli quand désactivée) + panneau Préférences de confidentialité.
+   Couleurs : tokens du site (--bg, --surface, --accent, --gold, --text, --border, --radius). */
+[data-carte] { min-height: 260px; }
+[data-carte] iframe { display: block; }
+
+.carte-coupee { display: flex; align-items: center; justify-content: center; background: var(--surface); }
+.carte-repli { text-align: center; padding: 32px 24px; font-size: 16px; color: var(--text); }
+.carte-repli p { margin: 0 0 12px; }
+.carte-repli-titre { font-size: 14px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); }
+.carte-repli-liens { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.carte-repli-liens a { color: var(--accent-light); text-decoration: underline; text-underline-offset: 3px; min-height: 44px; display: inline-flex; align-items: center; }
+.carte-repli-btn,
+.prefs-actions button {
+  font: inherit; font-size: 14px; letter-spacing: 1px; text-transform: uppercase;
+  min-height: 44px; padding: 10px 24px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--accent); background: transparent; color: var(--text);
+  transition: all 0.3s ease;
+}
+.carte-repli-btn:hover, .prefs-actions button:hover { border-color: var(--gold); color: var(--gold); }
+
+.footer-legal a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.footer-legal a:hover { color: var(--text); }
+
+.prefs {
+  position: fixed; inset: 0; z-index: 1000; display: none;
+  align-items: flex-end; justify-content: center;
+  background: rgba(10, 4, 10, 0.6); padding: 16px;
+  padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+}
+.prefs.ouvert { display: flex; }
+.prefs-boite {
+  width: 100%; max-width: 480px; background: var(--surface); color: var(--text);
+  border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px;
+  font-size: 16px; line-height: 1.6;
+}
+.prefs-boite h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 28px; margin: 0 0 12px; }
+.prefs-boite p { margin: 0 0 16px; color: var(--text-muted); font-size: 15px; }
+.prefs-boite a { color: var(--accent-light); }
+.prefs-ligne { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-bottom: 16px; cursor: pointer; }
+.prefs-ligne small { color: var(--text-muted); font-size: 14px; }
+.prefs-ligne input { width: 44px; height: 24px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+.prefs-note { font-size: 14px !important; }
+.prefs-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.prefs-ok { background: var(--accent) !important; color: var(--bg) !important; border-color: var(--accent) !important; }
+@media (min-width: 768px) { .prefs { align-items: center; } }
