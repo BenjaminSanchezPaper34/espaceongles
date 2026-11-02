@@ -2,7 +2,7 @@
 """Met à jour les avis affichés sur le site à partir de la page publique Planity.
 
 Source : les données structurées (JSON-LD) publiées par Planity sur
-https://www.planity.com/espace-ongles-34120-pezenas — note moyenne, nombre d'avis
+https://www.planity.com/espace-ongles-34120-pezenas : note moyenne, nombre d'avis
 et les 20 derniers avis (anonymes). Aucune API, aucun script tiers chez le visiteur :
 le HTML est réécrit ici puis déployé (tâche GitHub hebdomadaire).
 
@@ -107,7 +107,7 @@ def main():
     for i in range(max(len(planity), len(gg))):
         if i < len(planity):
             t, j = planity[i]
-            cartes.append(carte(t, "Cliente Planity", f"Planity — {j:%d/%m/%Y}"))
+            cartes.append(carte(t, "Cliente Planity", f"Planity · {j:%d/%m/%Y}"))
         if i < len(gg):
             cartes.append(carte(gg[i]["texte"], gg[i]["auteur"], "Google"))
     serie = "".join(cartes)
